@@ -150,8 +150,7 @@ namespace ExploreTandT.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
-            {
+           
                 var user = new ApplicationUser {PhoneNumber=model.PhoneNumber, UserName = model.Email, Email = model.Email , Address = model.Address, CNIC= model.CNIC, Name = model.Name, Type=model.Type};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
@@ -167,7 +166,7 @@ namespace ExploreTandT.Controllers
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
-            }
+           
 
             // If we got this far, something failed, redisplay form
             return View(model);
