@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "PackageConfirmation";
+}
+
+<div id="Receiptid">
+
+    <h1 class="Receipt">Payment Confirmation</h1>
+    <div class="container">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+        <!-- <div style="margin-bottom: 30px;margin-top: 100px;margin-right: -100px" class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1">Shipping Charges</span>
+              <input style="width: 500px" type="text" class="form-control" placeholder="Charges" aria-describedby="sizing-addon1">
+        </div> -->
+        <!-- <div style="margin-bottom: 30px;margin-top: 100px;margin-right: -100px" class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1">Shipping Charges</span>
+              <input style="width: 500px" type="text" class="form-control" placeholder="Charges" aria-describedby="sizing-addon1">
+        </div> -->
+        <form class="form-horizontal" role="form">
+
+            <div style="margin-top:50PX; " class="form-group">
+
+                <label for="inputType" class="col-sm-2 control-label" style="color: white"><h>Package Charges</h></label>
+
+                <div class="col-sm-4">
+
+                    <input type="text" class="form-control" id="input" placeholder="">
+
+                </div>
+
+            </div>
+
+        </form>
+        <!-- <div style="margin-right: -100px" class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1">Product Price</span>
+              <input style="width: 535px" type="text" class="form-control" placeholder="Price" aria-describedby="sizing-addon1">
+        </div>
+        <div style="margin-bottom: 100px;margin-top: 30px;margin-right: -100px" class="input-group input-group-lg">
+            <span class="input-group-addon" id="sizing-addon1">Total Price</span>
+              <input style="width: 560px" type="text" class="form-control" placeholder="Tprice" aria-describedby="sizing-addon1">
+        </div> -->
+        <form class="form-horizontal" role="form">
+
+            <div class="form-group">
+
+                <label for="inputType" class="col-sm-2 control-label" style="color: white">Tax</label>
+
+                <div class="col-sm-4">
+
+                    <input type="text" class="form-control" id="input" placeholder="Rs:">
+
+                </div>
+
+            </div>
+
+        </form>
+        <form class="form-horizontal" role="form">
+
+            <div class="form-group">
+
+                <label for="inputType" class="col-sm-2 control-label" style="color: white">Total Price</label>
+
+                <div class="col-sm-4">
+
+                    <input type="text" class="form-control" id="input" placeholder="Rs:">
+
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <div class="container-fluid">
+        <a href="~/Tour/GetPackage/" style="margin-left: 620px; width: 150px; margin-top: 50px;margin-bottom: 50px; type="button" class="btn btn-primary btn-responsive">OK</a>
+    </div>
+
+
+</div>
+</div>
+</div>
