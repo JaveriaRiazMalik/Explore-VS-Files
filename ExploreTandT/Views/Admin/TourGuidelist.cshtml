@@ -1,0 +1,68 @@
+﻿@model ExploreTandT.Models.AdminViewModel
+
+@{
+    ViewBag.Title = "TourGuidelist";
+}
+
+<div id="Admin_Account">
+    <div class="container">
+        <h1 class="AdminAccount"></h1>
+        <div class="AdminAccount-form">
+
+            <!--<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">-->
+
+            <img id="profile-img" class="profile-img-card" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+            <h2 class="Column2">Admin</h2>
+            <!--<span class="glyphicon glyphicon-user" aria-hidden="true"></span>-->
+
+            <p class="listText">List of Tour Guides</p>
+
+            <div class="table-responsive">
+                <table class="table table-Simple">
+                    <thead class="Column1">
+                        <tr>
+
+                            <th scope="col"> @Html.DisplayNameFor(model => model.listoftourguide[0].Name)</th>
+                            <th scope="col">  @Html.DisplayNameFor(model => model.listoftourguide[0].Email)</th>
+                            <th scope="col"> @Html.DisplayNameFor(model => model.listoftourguide[0].Address)</th>
+                            <th scope="col">  @Html.DisplayNameFor(model => model.listoftourguide[0].CNIC)</th>
+                            <th scope="col"> @Html.DisplayNameFor(model => model.listoftourguide[0].PhoneNumber)</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.listoftourguide)
+                        {
+                            <tr>
+
+                                <th scope="row">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Address)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CNIC)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                                </td>
+
+                                <td>
+                                    <button class="btn btn-primary btn-responsive">Delete </button>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+    </div>

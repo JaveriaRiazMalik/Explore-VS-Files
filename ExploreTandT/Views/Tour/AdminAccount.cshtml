@@ -39,71 +39,26 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
+                        @{
+                            var counter = 1;
+                            foreach (var item in ViewBag.Tourists)
+                            {
+                                <tr>
+                                    <th scope="row">@counter</th>
+                                    <td>@item.Name</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Address</td>
+                                    <td>@item.CNIC</td>
+                                    <td>@item.PhoneNumber</td>
+                                    <td>^KuH9UKI4</td>
+                                    <td>Question 4</td>
+                                    <td>I do!td>
+                                    <td>638268259-862</td>
 
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-
-                        </tr>
+                                </tr>
+                                counter++;
+                            }
+                        }
                     </tbody>
                 </table>
             </div>
@@ -135,70 +90,27 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @{
+                            var counter2 = 1;
+                            foreach (var item in ViewBag.Tourists)
+                            {
+
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
+                            <th scope="row">@counter2</th>
+                            <td>@item.Name</td>
+                            <td>@item.Email</td>
+                            <td>@item.Address</td>
+                            <td>@item.CNIC</td>
+                            <td>@item.PhoneNumber</td>
                             <td>^KuH9UKI4</td>
                             <td>Question 4</td>
                             <td>I do!td>
                             <td>638268259-862</td>
 
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Mike</td>
-                            <td>Mike44@Yahoo.com</td>
-                            <td>4-D-California</td>
-                            <td>35202-55728763-7</td>
-                            <td>+44-68469290577</td>
-                            <td>^KuH9UKI4</td>
-                            <td>Question 4</td>
-                            <td>I do!td>
-                            <td>638268259-862</td>
-
-                        </tr>
+                                counter2++;
+                            }
+                        }
                     </tbody>
                 </table>
             </div>
@@ -267,5 +179,5 @@
         </div>
     </div>
 
-    <!-- Content End -->
+   </div>
 

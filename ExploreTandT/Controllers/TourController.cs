@@ -19,6 +19,11 @@ namespace ExploreTandT.Controllers
         }
         public ActionResult AdminAccount()
         {
+
+            ExploreEntities1 db = new ExploreEntities1();
+            ViewBag.Tourists = db.AspNetUsers.Where(x => x.Type == "0").ToList();
+            ViewBag.Tourists = db.AspNetUsers.Where(x => x.Type == "1").ToList();
+            ViewBag.Places = db.AspNetUsers.ToList();
             return View();
         }
         public ActionResult AddPackage()

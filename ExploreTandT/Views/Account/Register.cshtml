@@ -63,11 +63,14 @@
                         <div class="form-group">
                            
                             <div>
-                                <select class="form-control" id="type" >
-                  
-                                    <option>Tourist</option>
-                                    <option>Tour Guide</option>
-                                </select>
+                                @{
+                                    List<SelectListItem> Typedl = new List<SelectListItem>();
+                                    Typedl.Add(new SelectListItem { Text = "Tourist", Value = "0", Selected = true });
+                                    Typedl.Add(new SelectListItem { Text = "Tour Guide", Value = "1" });
+                                }
+
+                                @Html.DropDownList("Type", Typedl, "Select type", new { @class = "form-control" });
+
                             </div>
                         </div>
 
@@ -78,5 +81,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    
 

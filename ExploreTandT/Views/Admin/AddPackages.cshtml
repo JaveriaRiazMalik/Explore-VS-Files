@@ -1,0 +1,103 @@
+﻿@model ExploreTandT.Models.AllPackageViewModel
+
+@{
+    ViewBag.Title = "AddPackages";
+}
+
+<style>
+    .text-validate {
+        color: white;
+    }
+</style>
+
+<div id="RegisterForm">
+    <div class="container">
+        <h1 class="form-heading"></h1>
+        <div class="Register-form">
+            <div class="main-div">
+                <div class="panel" style="background-color: transparent;">
+                    <h2>Add Packages</h2>
+                </div>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <div class="form-group">
+
+                            @Html.EditorFor(model => model.Category, new { htmlAttributes = new { @class = "form-control", placeholder = "Category" } })
+                            @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <div class="form-group">
+
+                            @Html.EditorFor(model => model.Places, new { htmlAttributes = new { @class = "form-control", placeholder = "Place" } })
+                            @Html.ValidationMessageFor(model => model.Places, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <div class="form-group">
+
+                            @Html.EditorFor(model => model.Range, new { htmlAttributes = new { @class = "form-control", placeholder = "Range" } })
+                            @Html.ValidationMessageFor(model => model.Range, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <div class="form-group">
+
+                           @Html.DropDownList("tourguides", (IEnumerable<SelectListItem>)ViewBag.name, "Select Tour Guide", new { @class = "form-control" });
+                        </div>
+
+
+                        <div class="form-group">
+
+                            @Html.EditorFor(model => model.Schedule, new { htmlAttributes = new { @class = "form-control", placeholder = "Schedule" } })
+                            @Html.ValidationMessageFor(model => model.Schedule, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <div class="form-group">
+
+                            @Html.EditorFor(model => model.Vehicle, new { htmlAttributes = new { @class = "form-control", placeholder = "Vehicle" } })
+                            @Html.ValidationMessageFor(model => model.Vehicle, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <div class="form-group">
+
+
+                            @Html.EditorFor(model => model.Hotel, new { htmlAttributes = new { @class = "form-control", placeholder = "Hotel" } })
+                            @Html.ValidationMessageFor(model => model.Hotel, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <div class="form-group">
+
+                            @Html.EditorFor(model => model.Refreshments, new { htmlAttributes = new { @class = "form-control", placeholder = "Refreshments" } })
+                            @Html.ValidationMessageFor(model => model.Refreshments, "", new { @class = "text-validate" })
+                        </div>
+
+
+                        <input type="submit" value="Add" class="btn btn-primary btn-responsive" />
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

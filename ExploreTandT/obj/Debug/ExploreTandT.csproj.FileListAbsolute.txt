@@ -238,123 +238,243 @@ C:\Users\Javeria Riaz\Desktop\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.c
 C:\Users\Javeria Riaz\Desktop\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.csproj.CopyComplete
 C:\Users\Javeria Riaz\Desktop\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.dll
 C:\Users\Javeria Riaz\Desktop\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.pdb
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\ApplicationInsights.config
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\ExploreTandT.dll.config
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\ExploreTandT.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\ExploreTandT.pdb
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\csc.exe
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\csc.exe.config
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\csc.rsp
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\csi.exe
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\csi.exe.config
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\csi.rsp
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.AppContext.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Console.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.IO.Compression.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.IO.Pipes.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Security.AccessControl.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Security.Claims.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.ValueTuple.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\vbc.exe
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\vbc.exe.config
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\vbc.rsp
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\VBCSCompiler.exe
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Antlr3.Runtime.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\EntityFramework.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\EntityFramework.SqlServer.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.Web.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Newtonsoft.Json.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Owin.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Helpers.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Mvc.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Optimization.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Razor.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.WebPages.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.WebPages.Razor.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\WebGrease.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Helpers.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Mvc.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Optimization.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.Razor.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.WebPages.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Web.WebPages.Razor.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Newtonsoft.Json.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Antlr3.Runtime.pdb
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\EntityFramework.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\EntityFramework.SqlServer.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\System.Diagnostics.DiagnosticSource.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.AI.Web.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.csprojAssemblyReference.cache
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.csproj.CoreCompileInputs.cache
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.csproj.CopyComplete
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.dll
-C:\Users\Javeria Riaz\Desktop\Project\ExploreTandT\ExploreTandT\obj\Debug\ExploreTandT.pdb
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\ApplicationInsights.config
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\ExploreTandT.dll.config
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\ExploreTandT.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\ExploreTandT.pdb
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\csc.exe
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\csc.exe.config
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\csc.rsp
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\csi.exe
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\csi.exe.config
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\csi.rsp
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.AppContext.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Console.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.Compression.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Claims.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.ValueTuple.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\vbc.exe
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\vbc.exe.config
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\vbc.rsp
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Antlr3.Runtime.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\EntityFramework.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\EntityFramework.SqlServer.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.Web.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Newtonsoft.Json.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Owin.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Helpers.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Mvc.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Optimization.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Razor.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Razor.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\WebGrease.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Helpers.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Mvc.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Optimization.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.Razor.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Razor.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Newtonsoft.Json.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Antlr3.Runtime.pdb
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\EntityFramework.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\EntityFramework.SqlServer.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.Web.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.csprojAssemblyReference.cache
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.csproj.CopyComplete
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.dll
+C:\Users\Hp\Desktop\vs\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.pdb
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\ApplicationInsights.config
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\ExploreTandT.dll.config
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\ExploreTandT.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\ExploreTandT.pdb
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\csc.exe
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\csc.exe.config
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\csc.rsp
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\csi.exe
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\csi.exe.config
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\csi.rsp
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.Managed.Core.targets
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.AppContext.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Collections.Immutable.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Console.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.Compression.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.FileSystem.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.IO.Pipes.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Reflection.Metadata.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.AccessControl.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Claims.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Security.Principal.Windows.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.ValueTuple.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.XmlDocument.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.XPath.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\vbc.exe
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\vbc.exe.config
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\vbc.rsp
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\VBCSCompiler.exe
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\roslyn\VBCSCompiler.exe.config
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Antlr3.Runtime.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\EntityFramework.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\EntityFramework.SqlServer.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.Agent.Intercept.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.DependencyCollector.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.Web.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.WindowsServer.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.ApplicationInsights.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Core.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Cookies.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Facebook.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Google.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.OAuth.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Twitter.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Web.Infrastructure.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Newtonsoft.Json.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Owin.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Diagnostics.DiagnosticSource.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Helpers.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Mvc.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Optimization.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Razor.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Deployment.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Razor.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\WebGrease.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Helpers.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Mvc.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Optimization.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.Razor.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Deployment.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Web.WebPages.Razor.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Newtonsoft.Json.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Antlr3.Runtime.pdb
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\EntityFramework.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\EntityFramework.SqlServer.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Core.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Facebook.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Cookies.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Google.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.Twitter.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.Owin.Security.OAuth.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\System.Diagnostics.DiagnosticSource.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.DependencyCollector.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.WindowsServer.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.AI.Web.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.csprojAssemblyReference.cache
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.csproj.CoreCompileInputs.cache
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.csproj.CopyComplete
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.dll
+E:\UET BSCS\Explore-VS-Files\ExploreTandT\obj\Debug\ExploreTandT.pdb
