@@ -24,5 +24,7 @@ namespace ExploreTandT.Models
         public string Hotel { get; set; }
 
         public string Refreshments { get; set; }
+
+        public int packageId { get; set;}
     }
 }

@@ -10,5 +10,7 @@ namespace ExploreTandT.Models
         public List<SelectedPackagesViewModel> listofpackages = new List<SelectedPackagesViewModel>();
 
         public List<RegisterViewModel> listofusers = new List<RegisterViewModel>();
+
+       
     }
 }

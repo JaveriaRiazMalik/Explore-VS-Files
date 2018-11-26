@@ -25,7 +25,7 @@ namespace ExploreTandT.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -37,9 +37,9 @@ namespace ExploreTandT.Controllers
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
-            private set 
-            { 
-                _signInManager = value; 
+            private set
+            {
+                _signInManager = value;
             }
         }
 
@@ -75,7 +75,7 @@ namespace ExploreTandT.Controllers
             {
                 return View(model);
             }
-            if(var == model.Email && pass == model.Password)
+            if (var == model.Email && pass == model.Password)
             {
                 return RedirectToAction("dashboard", "Admin");
             }
@@ -127,7 +127,7 @@ namespace ExploreTandT.Controllers
             // If a user enters incorrect codes for a specified amount of time then the user account 
             // will be locked out for a specified amount of time. 
             // You can configure the account lockout settings in IdentityConfig
-            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent:  model.RememberMe, rememberBrowser: model.RememberBrowser);
+            var result = await SignInManager.TwoFactorSignInAsync(model.Provider, model.Code, isPersistent: model.RememberMe, rememberBrowser: model.RememberBrowser);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -156,9 +156,9 @@ namespace ExploreTandT.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
 
-            {
-                var user = new ApplicationUser {PhoneNumber=model.PhoneNumber, UserName = model.Email, Email = model.Email , Address = model.Address, CNIC= model.CNIC, Name = model.Name, Type=model.Type};
-                var result = await UserManager.CreateAsync(user, model.Password);
+        {
+            var user = new ApplicationUser { PhoneNumber = model.PhoneNumber, UserName = model.Email, Email = model.Email, Address = model.Address, CNIC = model.CNIC, Name = model.Name, Type = model.Type };
+            var result = await UserManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
                 await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
@@ -171,7 +171,7 @@ namespace ExploreTandT.Controllers
 
                 return RedirectToAction("Index", "Home");
             }
-                AddErrors(result);
+            AddErrors(result);
 
             // If we got this far, something failed, redisplay form
             return View(model);
@@ -426,11 +426,50 @@ namespace ExploreTandT.Controllers
             }
 
             base.Dispose(disposing);
+
+        }
+
+        public ActionResult Select(int id)
+        {
+
+            UserAccountViewModel user = new UserAccountViewModel();
+            ExploreEntities1 db = new ExploreEntities1();
+            var selectpack = db.SelectedPacakges.ToList();
+            SelectedPacakge c = new SelectedPacakge();
+            string userid = User.Identity.GetUserId();
+            var i = db.AllPackages.Where(y => y.PackageId == id).First();
+            if (userid != null)
+            {
+                
+                        c.Name = i.Name;
+                        c.Category = i.Category;
+                        c.Places = i.Places;
+                        c.Range = Convert.ToInt16(i.Range);
+                        c.TourGuide = i.TourGuide;
+                        c.Schedule = i.Schedule;
+                        c.Vehicle = i.Vehicle;
+                        c.Hotel = i.Hotel;
+                        c.Refreshments = i.Refreshments;
+                        c.AddedBy = userid;
+                        c.AddedOn = Convert.ToDateTime(DateTime.Now);
+                        db.SelectedPacakges.Add(c);
+
+                        db.SaveChanges();
+                        
+                    
+                
+                return RedirectToAction("Index", "Account");
+            }
+            else
+            {
+                return Redirect("~/Account/Login");
+            }
             
         }
 
         public ActionResult Index()
         {
+            
             UserAccountViewModel user = new UserAccountViewModel();
             ExploreEntities1 db = new ExploreEntities1();
             RegisterViewModel loggedinuser = new RegisterViewModel();
@@ -443,39 +482,38 @@ namespace ExploreTandT.Controllers
             loggedinuser.PhoneNumber = person.PhoneNumber;
             user.listofusers.Add(loggedinuser);
 
+
             List<SelectedPackagesViewModel> l = new List<SelectedPackagesViewModel>();
             var packageslist = db.SelectedPacakges.ToList();
             if (packageslist != null)
             {
                 foreach (var p in packageslist)
                 {
-                    SelectedPackagesViewModel allpack = new SelectedPackagesViewModel();
-                    allpack.Name = p.Name;
-                    allpack.Category = p.Category;
-                    allpack.Places = p.Places;
-                    allpack.Range = Convert.ToInt16(p.Range);
-                    allpack.TourGuide = p.TourGuide;
-                    allpack.Schedule = p.Schedule;
-                    allpack.Vehicle = p.Vehicle;
-                    allpack.Hotel = p.Hotel;
-                    allpack.Refreshments = p.Refreshments;
-                    allpack.AddedBy = User.Identity.GetUserId();
-                    allpack.AddedOn = Convert.ToDateTime(p.AddedOn);
+                    if (userid == p.AddedBy)
+                    {
+                        SelectedPackagesViewModel allpack = new SelectedPackagesViewModel();
+                        allpack.Name = p.Name;
+                        allpack.Category = p.Category;
+                        allpack.Places = p.Places;
+                        allpack.Range = Convert.ToInt16(p.Range);
+                        allpack.TourGuide = p.TourGuide;
+                        allpack.Schedule = p.Schedule;
+                        allpack.Vehicle = p.Vehicle;
+                        allpack.Hotel = p.Hotel;
+                        allpack.Refreshments = p.Refreshments;
+                        allpack.AddedBy = User.Identity.GetUserId();
+                        allpack.AddedOn = Convert.ToDateTime(p.AddedOn);
 
-                    user.listofpackages.Add(allpack);
-
+                        user.listofpackages.Add(allpack);
+                    }
                 }
             }
 
+
             return View(user);
         }
-
-        public ActionResult IndexLame()
-        {
-            return View();
-            
-        }
-
+        
+  
         public ActionResult Edit()
         {
             RegisterViewModel collection = new RegisterViewModel();

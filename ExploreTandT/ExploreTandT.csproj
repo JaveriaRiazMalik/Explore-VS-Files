@@ -215,6 +215,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PackagesController.cs" />
     <Compile Include="Controllers\TourController.cs" />
     <Compile Include="C__MigrationHistory.cs">
       <DependentUpon>Explore.tt</DependentUpon>
@@ -416,6 +417,9 @@
     <Content Include="Views\Admin\TourGuidelist.cshtml" />
     <Content Include="Views\Admin\Packagelist.cshtml" />
     <Content Include="Views\Admin\AddPackages.cshtml" />
+    <Content Include="Views\Packages\Index.cshtml" />
+    <Content Include="Views\Admin\Delete.cshtml" />
+    <Content Include="Views\Account\Select.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
