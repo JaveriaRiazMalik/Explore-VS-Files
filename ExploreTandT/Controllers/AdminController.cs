@@ -81,6 +81,20 @@ namespace ExploreTandT.Controllers
         }
         public ActionResult AddPackages()
         {
+            ExploreEntities1 db = new ExploreEntities1();
+
+            List<string> name = new List<string>();
+
+            foreach (AspNetUser u in db.AspNetUsers)
+            {
+                if (u.Type == "1")
+                {
+                    name.Add(u.Name);
+
+                }
+            }
+
+            ViewBag.name = name;
             return View();
         }
 
@@ -90,18 +104,18 @@ namespace ExploreTandT.Controllers
         [HttpPost]
         public ActionResult AddPackages(AllPackageViewModel collection)
         {
+
             try
             {
                 ExploreEntities1 db = new ExploreEntities1();
                 AllPackage p = new AllPackage();
-                List<AspNetUser> user = new List<AspNetUser>();
-                p.TourGuide = collection.TourGuide;
+
                 p.Name = collection.Name;
                 p.Category = collection.Category;
                 p.Places = collection.Places;
                 p.Range = collection.Range;
-
                 p.TourGuide = collection.TourGuide;
+
                 p.Schedule = collection.Schedule;
                 p.Vehicle = collection.Vehicle;
                 p.Hotel = collection.Hotel;
