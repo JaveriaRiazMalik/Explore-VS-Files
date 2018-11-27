@@ -10,6 +10,9 @@ namespace ExploreTandT.Models
         public List<AspNetUser> listoftourists = new List<AspNetUser>();
         public List<AspNetUser> listoftourguide = new List<AspNetUser>();
         public List<AllPackageViewModel> listofpackages = new List<AllPackageViewModel>();
+        public string select { get; set; }
+        public int selectrange { get; set; }
+
 
     }
 }

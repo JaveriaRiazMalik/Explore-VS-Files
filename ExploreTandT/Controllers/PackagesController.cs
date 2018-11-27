@@ -9,7 +9,10 @@ namespace ExploreTandT.Controllers
 {
     public class PackagesController : Controller
     {
+
         
+
+   
 
         public ActionResult Index()
         {
@@ -34,10 +37,106 @@ namespace ExploreTandT.Controllers
 
                 userL.listofpackages.Add(v);
             }
+            
+
+            List<string> city = new List<string>();
+
+            foreach (AllPackage u in db.AllPackages)
+            {
+
+                city.Add(u.Places);
+
+            }
+
+            ViewBag.city = city;
+
+            List<int> range = new List<int>();
+
+            foreach (AllPackage u in db.AllPackages)
+            {
+
+                range.Add(Convert.ToInt16(u.Range));
+
+            }
+
+            ViewBag.range = range;
+
 
             return View(userL);
         }
 
+
+        [HttpPost]
+        public ActionResult Index(AdminViewModel collection)
+        {
+            ExploreEntities1 db = new ExploreEntities1();
+            AdminViewModel userL = new AdminViewModel();
+            var list = db.AllPackages.ToList();
+            List<AllPackageViewModel> x = new List<AllPackageViewModel>();
+
+            foreach (var i in list)
+            {
+                if(i.Places  == collection.select)
+                {
+                    AllPackageViewModel v = new AllPackageViewModel();
+                    v.Category = i.Category;
+                    v.Name = i.Name;
+                    v.Places = i.Places;
+                    v.Range = Convert.ToInt16(i.Range);
+                    v.TourGuide = i.TourGuide;
+                    v.Schedule = i.Schedule;
+                    v.Vehicle = i.Vehicle;
+                    v.Hotel = i.Hotel;
+                    v.Refreshments = i.Refreshments;
+                    v.packageId = i.PackageId;
+
+                    userL.listofpackages.Add(v);
+                }
+                else if(Convert.ToInt16(i.Range) == collection.selectrange)
+                {
+                    AllPackageViewModel v = new AllPackageViewModel();
+                    v.Category = i.Category;
+                    v.Name = i.Name;
+                    v.Places = i.Places;
+                    v.Range = Convert.ToInt16(i.Range);
+                    v.TourGuide = i.TourGuide;
+                    v.Schedule = i.Schedule;
+                    v.Vehicle = i.Vehicle;
+                    v.Hotel = i.Hotel;
+                    v.Refreshments = i.Refreshments;
+                    v.packageId = i.PackageId;
+
+                    userL.listofpackages.Add(v);
+                }
+                
+            }
+
+
+            List<string> city = new List<string>();
+
+            foreach (AllPackage u in db.AllPackages)
+            {
+
+                city.Add(u.Places);
+
+            }
+
+            ViewBag.city = city;
+
+            List<int> range = new List<int>();
+
+            foreach (AllPackage u in db.AllPackages)
+            {
+
+                range.Add(Convert.ToInt16(u.Range));
+
+            }
+
+            ViewBag.range = range;
+
+
+            return View(userL);
+        }
         // GET: Packages/Details/5
         public ActionResult Details(int id)
         {
