@@ -16,8 +16,13 @@
                         <img src="https://c1.staticflickr.com/8/7295/9354993761_cda6475b40_b.jpg">
                     </div>
                 </div>
-                <div  class="text-right">
+                <div class="text-right">
+                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
                     <a href="javascript:document.getElementById('logoutForm').submit()" type="button" class="btn btn-primary btn-responsive">LogOff </a>
+                    }
+                    
                 </div>
             </div>
 
