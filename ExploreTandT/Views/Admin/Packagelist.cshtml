@@ -68,7 +68,7 @@
                                 </td>
        
                                 <td>
-                                    <a href="~/Admin/Delete/@item.packageId" type="button" class="btn btn-primary btn-responsive">Delete</a>
+                                    @Html.ActionLink("Delete", "DeletePackage", "Admin", new { id = item.packageId }, new { @class = "btn btn-primary btn-responsive" })
 
                                 </td>
 

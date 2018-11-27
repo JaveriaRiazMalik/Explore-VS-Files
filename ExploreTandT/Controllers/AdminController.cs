@@ -119,8 +119,14 @@ namespace ExploreTandT.Controllers
             return View();
         }
 
-       
-
+       public ActionResult DeletePackage(int id)
+        {
+            ExploreEntities1 db = new ExploreEntities1();
+            var item = db.AllPackages.Where(x => x.PackageId == id).SingleOrDefault();
+            db.AllPackages.Remove(item);
+            db.SaveChanges();
+            return RedirectToAction("Packagelist");
+        }
 
         [HttpPost]
         public ActionResult AddPackages(AllPackageViewModel collection)
