@@ -192,7 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllPackage.cs">
-      <DependentUpon>Explore.tt</DependentUpon>
+      <DependentUpon>DBExploreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -200,16 +200,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="AspNetRole.cs">
-      <DependentUpon>Explore.tt</DependentUpon>
+      <DependentUpon>DBExploreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUser.cs">
-      <DependentUpon>Explore.tt</DependentUpon>
+      <DependentUpon>DBExploreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserClaim.cs">
-      <DependentUpon>Explore.tt</DependentUpon>
+      <DependentUpon>DBExploreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserLogin.cs">
-      <DependentUpon>Explore.tt</DependentUpon>
+      <DependentUpon>DBExploreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
@@ -218,7 +218,7 @@
     <Compile Include="Controllers\PackagesController.cs" />
     <Compile Include="Controllers\TourController.cs" />
     <Compile Include="C__MigrationHistory.cs">
-      <DependentUpon>Explore.tt</DependentUpon>
+      <DependentUpon>DBExploreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="DBExploreEntity.Context.cs">
       <AutoGen>True</AutoGen>
@@ -262,7 +262,7 @@
     <Compile Include="Models\UserAccountViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectedPacakge.cs">
-      <DependentUpon>Explore.tt</DependentUpon>
+      <DependentUpon>DBExploreEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>

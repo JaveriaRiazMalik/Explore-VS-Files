@@ -51,6 +51,16 @@ namespace ExploreTandT.Controllers
             return View(user);
         }
 
+        public ActionResult DeleteTourGuide(string id)
+        {
+            ExploreEntities1 db = new ExploreEntities1();
+            var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
+            db.AspNetUsers.Remove(item);
+            db.SaveChanges();
+
+            return RedirectToAction("TourGuidelist");
+        }
+
         public ActionResult Packagelist()
         {
             ExploreEntities1 db = new ExploreEntities1();
