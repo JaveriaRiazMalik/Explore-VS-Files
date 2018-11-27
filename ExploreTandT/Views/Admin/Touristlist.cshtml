@@ -53,7 +53,7 @@
                                 </td>
 
                                 <td>
-                                    <button class="btn btn-primary btn-responsive">Delete </button>
+                                    @Html.ActionLink("Delete", "DeleteTourist", "Admin", new { id = item.Id }, new { @class = "btn btn-primary btn-responsive" })
                                 </td>
                             </tr>
                         }
