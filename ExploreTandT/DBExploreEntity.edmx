@@ -101,6 +101,7 @@
           <Property Name="AddedOn" Type="datetime" />
           <Property Name="AddedBy" Type="nvarchar" MaxLength="128" />
           <Property Name="SelectedPacakgeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="checkid" Type="int" />
         </EntityType>
         <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
           <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
@@ -282,6 +283,7 @@
           <Property Name="AddedOn" Type="DateTime" Precision="3" />
           <Property Name="AddedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
           <Property Name="SelectedPacakgeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="checkid" Type="Int32" />
         </EntityType>
         <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
           <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
@@ -420,6 +422,7 @@
           <EntitySetMapping Name="SelectedPacakges">
             <EntityTypeMapping TypeName="ExploreModel.SelectedPacakge">
               <MappingFragment StoreEntitySet="SelectedPacakges">
+                <ScalarProperty Name="checkid" ColumnName="checkid" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Category" ColumnName="Category" />
                 <ScalarProperty Name="Places" ColumnName="Places" />

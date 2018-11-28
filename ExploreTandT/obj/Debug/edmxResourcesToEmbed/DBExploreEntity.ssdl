@@ -96,6 +96,7 @@
     <Property Name="AddedOn" Type="datetime" />
     <Property Name="AddedBy" Type="nvarchar" MaxLength="128" />
     <Property Name="SelectedPacakgeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="checkid" Type="int" />
   </EntityType>
   <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
     <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">

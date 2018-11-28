@@ -434,30 +434,39 @@ namespace ExploreTandT.Controllers
 
             UserAccountViewModel user = new UserAccountViewModel();
             ExploreEntities1 db = new ExploreEntities1();
-            var selectpack = db.SelectedPacakges.ToList();
             SelectedPacakge c = new SelectedPacakge();
             string userid = User.Identity.GetUserId();
             var i = db.AllPackages.Where(y => y.PackageId == id).First();
+            var checklist = db.SelectedPacakges.ToList();
+            bool check = false;
             if (userid != null)
             {
-                
-                        c.Name = i.Name;
-                        c.Category = i.Category;
-                        c.Places = i.Places;
-                        c.Range = Convert.ToInt16(i.Range);
-                        c.TourGuide = i.TourGuide;
-                        c.Schedule = i.Schedule;
-                        c.Vehicle = i.Vehicle;
-                        c.Hotel = i.Hotel;
-                        c.Refreshments = i.Refreshments;
-                        c.AddedBy = userid;
-                        c.AddedOn = Convert.ToDateTime(DateTime.Now);
-                        db.SelectedPacakges.Add(c);
+                foreach(var e in checklist)
+                {
+                    if(e.checkid == id)
+                    {
+                        check = true;
+                    }
+                }
+                if (check == false)
+                {
+                    c.checkid = i.PackageId;
+                    c.Name = i.Name;
+                    c.Category = i.Category;
+                    c.Places = i.Places;
+                    c.Range = Convert.ToInt16(i.Range);
+                    c.TourGuide = i.TourGuide;
+                    c.Schedule = i.Schedule;
+                    c.Vehicle = i.Vehicle;
+                    c.Hotel = i.Hotel;
+                    c.Refreshments = i.Refreshments;
+                    c.AddedBy = userid;
+                    c.AddedOn = Convert.ToDateTime(DateTime.Now);
+                    db.SelectedPacakges.Add(c);
 
-                        db.SaveChanges();
-                        
-                    
-                
+                    db.SaveChanges();
+
+                }  
                 return RedirectToAction("Index", "Account");
             }
             else
@@ -465,6 +474,15 @@ namespace ExploreTandT.Controllers
                 return Redirect("~/Account/Login");
             }
                 
+        }
+
+        public ActionResult CancelPackage(int id)
+        {
+            ExploreEntities1 db = new ExploreEntities1();
+            var item = db.SelectedPacakges.Where(x => x.checkid == id).SingleOrDefault();
+            db.SelectedPacakges.Remove(item);
+            db.SaveChanges();
+            return RedirectToAction("Index", "Account");
         }
 
         public ActionResult Index()
@@ -492,6 +510,7 @@ namespace ExploreTandT.Controllers
                     if (userid == p.AddedBy)
                     {
                         SelectedPackagesViewModel allpack = new SelectedPackagesViewModel();
+                        allpack.checkid = Convert.ToInt16(p.checkid);
                         allpack.Name = p.Name;
                         allpack.Category = p.Category;
                         allpack.Places = p.Places;

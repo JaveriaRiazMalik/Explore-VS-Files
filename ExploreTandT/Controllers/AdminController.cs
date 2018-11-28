@@ -160,39 +160,7 @@ namespace ExploreTandT.Controllers
 
         }
 
-        // GET: Dashboard/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Dashboard/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-                ExploreEntities1 ent = new ExploreEntities1();
-                var list = ent.AllPackages.Where(x => x.PackageId == id).First();
-                var d = ent.AllPackages.ToList();
-                foreach(var i in d)
-                {
-                    if(i.PackageId == Convert.ToInt32(list))
-                    {
-                        ent.Entry(i).State = System.Data.Entity.EntityState.Deleted;
-                    }
-                }
-                    
-                
-                ent.SaveChanges();
-                return RedirectToAction("Admin", "Packagelist");
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        
     }
 
 }
