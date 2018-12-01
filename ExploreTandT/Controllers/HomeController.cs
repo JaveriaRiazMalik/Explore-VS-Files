@@ -34,7 +34,7 @@ namespace ExploreTandT.Controllers
         public async Task<ActionResult> Contact(ContactViewModel collection)
         {
             var message = new MailMessage();
-            message.To.Add(new MailAddress("Summenzahid@gmail.com")); 
+            message.To.Add(new MailAddress("exploretoursguide@gmail.com")); 
             message.From = new MailAddress(collection.Email);  
             message.Subject ="Explore Contact";
             message.Body = string.Format(collection.Body, "model.FromName", "model.FromEmail", "model.Message");
@@ -44,8 +44,8 @@ namespace ExploreTandT.Controllers
             {
                 var credential = new NetworkCredential
                 {
-                    UserName = "Summenzahid@gmail.com",  
-                    Password = "Password Goes Here"  
+                    UserName = "exploretoursguide@gmail.com",  
+                    Password = "admin-123"  
                 };
                 smtp.Credentials = credential;
                 smtp.Host = "smtp.gmail.com";
