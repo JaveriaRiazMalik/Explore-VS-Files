@@ -16,6 +16,7 @@ namespace ExploreTandT.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        ExploreTandTEntites db = new ExploreTandTEntites();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
         private string var = "admin@gmail.com";
@@ -433,7 +434,6 @@ namespace ExploreTandT.Controllers
         {
 
             UserAccountViewModel user = new UserAccountViewModel();
-            ExploreEntities1 db = new ExploreEntities1();
             SelectedPacakge c = new SelectedPacakge();
             string userid = User.Identity.GetUserId();
             var i = db.AllPackages.Where(y => y.PackageId == id).First();
@@ -478,7 +478,6 @@ namespace ExploreTandT.Controllers
 
         public ActionResult CancelPackage(int id)
         {
-            ExploreEntities1 db = new ExploreEntities1();
             var item = db.SelectedPacakges.Where(x => x.checkid == id).SingleOrDefault();
             db.SelectedPacakges.Remove(item);
             db.SaveChanges();
@@ -489,7 +488,6 @@ namespace ExploreTandT.Controllers
         {
             
             UserAccountViewModel user = new UserAccountViewModel();
-            ExploreEntities1 db = new ExploreEntities1();
             RegisterViewModel loggedinuser = new RegisterViewModel();
             string userid = User.Identity.GetUserId();
             var person = db.AspNetUsers.Where(y => y.Id == userid).First();
@@ -536,7 +534,6 @@ namespace ExploreTandT.Controllers
         public ActionResult Edit()
         {
             RegisterViewModel collection = new RegisterViewModel();
-            ExploreEntities1 db = new ExploreEntities1();
             string userid = User.Identity.GetUserId();
             var p = db.AspNetUsers.Where(x => x.Id == userid).First(); //Condition to check the Id of specific person to edit only his/her details
 
@@ -556,7 +553,6 @@ namespace ExploreTandT.Controllers
         {
             try
             {
-                ExploreEntities1 db = new ExploreEntities1();
                 string userid = User.Identity.GetUserId();
                 var p = db.AspNetUsers.Where(x => x.Id == userid).First(); //Condition to check the Id of specific person to edit only his/her details
 

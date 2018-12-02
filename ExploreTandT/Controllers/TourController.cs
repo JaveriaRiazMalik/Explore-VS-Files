@@ -8,6 +8,7 @@ namespace ExploreTandT.Controllers
 {
     public class TourController : Controller
     {
+        ExploreTandTEntites db = new ExploreTandTEntites();
         // GET: Tour
         public ActionResult Index()
         {
@@ -19,8 +20,6 @@ namespace ExploreTandT.Controllers
         }
         public ActionResult AdminAccount()
         {
-
-            ExploreEntities1 db = new ExploreEntities1();
             ViewBag.Tourists = db.AspNetUsers.Where(x => x.Type == "0").ToList();
             ViewBag.Tourists = db.AspNetUsers.Where(x => x.Type == "1").ToList();
             ViewBag.Places = db.AspNetUsers.ToList();

@@ -9,6 +9,7 @@ namespace ExploreTandT.Controllers
 {
     public class AdminController : Controller
     {
+        ExploreTandTEntites db = new ExploreTandTEntites();
         // GET: Admin
         public ActionResult Index()
         {
@@ -16,7 +17,7 @@ namespace ExploreTandT.Controllers
         }
         public ActionResult Dashboard()
         {
-            ExploreEntities1 db = new ExploreEntities1();
+            
             ViewBag.tourists_count = db.AspNetUsers.Where(x => x.Type == "0").ToList().Count;
             ViewBag.tourguide_count = db.AspNetUsers.Where(x => x.Type == "1").ToList().Count;
             ViewBag.places_count = db.AllPackages.ToList().Count;
@@ -25,7 +26,6 @@ namespace ExploreTandT.Controllers
 
         public ActionResult Touristlist()
         {
-            ExploreEntities1 db = new ExploreEntities1();
             AdminViewModel user = new AdminViewModel();
             foreach (AspNetUser u in db.AspNetUsers)
             {
@@ -39,7 +39,6 @@ namespace ExploreTandT.Controllers
 
         public ActionResult TourGuidelist()
         {
-            ExploreEntities1 db = new ExploreEntities1();
             AdminViewModel user = new AdminViewModel();
             foreach (AspNetUser u in db.AspNetUsers)
             {
@@ -53,7 +52,6 @@ namespace ExploreTandT.Controllers
 
         public ActionResult DeleteTourGuide(string id)
         {
-            ExploreEntities1 db = new ExploreEntities1();
             var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
             db.AspNetUsers.Remove(item);
             db.SaveChanges();
@@ -63,7 +61,7 @@ namespace ExploreTandT.Controllers
 
         public ActionResult DeleteTourist(string id)
         {
-            ExploreEntities1 db = new ExploreEntities1();
+            ExploreTandTEntites db = new ExploreTandTEntites();
             var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
             db.AspNetUsers.Remove(item);
             db.SaveChanges();
@@ -73,7 +71,6 @@ namespace ExploreTandT.Controllers
 
         public ActionResult Packagelist()
         {
-            ExploreEntities1 db = new ExploreEntities1();
             AdminViewModel user = new AdminViewModel();
             List<AllPackageViewModel> l = new List<AllPackageViewModel>();
             var packageslist = db.AllPackages.ToList();
@@ -102,7 +99,6 @@ namespace ExploreTandT.Controllers
 
         public ActionResult AddPackages()
         {
-            ExploreEntities1 db = new ExploreEntities1();
 
             List<string> name = new List<string>();
 
@@ -121,7 +117,6 @@ namespace ExploreTandT.Controllers
 
        public ActionResult DeletePackage(int id)
         {
-            ExploreEntities1 db = new ExploreEntities1();
             var item = db.AllPackages.Where(x => x.PackageId == id).SingleOrDefault();
             db.AllPackages.Remove(item);
             db.SaveChanges();
@@ -134,7 +129,7 @@ namespace ExploreTandT.Controllers
 
             try
             {
-                ExploreEntities1 db = new ExploreEntities1();
+ 
                 AllPackage p = new AllPackage();
 
                 p.Name = collection.Name;

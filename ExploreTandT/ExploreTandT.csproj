@@ -192,7 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllPackage.cs">
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -200,16 +200,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="AspNetRole.cs">
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUser.cs">
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserClaim.cs">
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserLogin.cs">
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
@@ -218,37 +218,22 @@
     <Compile Include="Controllers\PackagesController.cs" />
     <Compile Include="Controllers\TourController.cs" />
     <Compile Include="C__MigrationHistory.cs">
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBExploreEntity.Context.cs">
+    <Compile Include="ExploreTandTEntites.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBExploreEntity.Context.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBExploreEntity.cs">
+    <Compile Include="ExploreTandTEntites.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
-    <Compile Include="DBExploreEntity.Designer.cs">
+    <Compile Include="ExploreTandTEntites.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBExploreEntity.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Explore.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Explore.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Explore.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Explore.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Explore.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Explore.edmx</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.edmx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -261,9 +246,24 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\SelectedPackagesViewModel.cs" />
     <Compile Include="Models\UserAccountViewModel.cs" />
+    <Compile Include="MSreplication_options.cs">
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectedPacakge.cs">
-      <DependentUpon>DBExploreEntity.tt</DependentUpon>
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spt_fallback_db.cs">
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spt_fallback_dev.cs">
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spt_fallback_usg.cs">
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
+    </Compile>
+    <Compile Include="spt_monitor.cs">
+      <DependentUpon>ExploreTandTEntites.tt</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -278,25 +278,15 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\Style.css" />
     <Content Include="dashboard.css" />
-    <Content Include="DBExploreEntity.Context.tt">
+    <Content Include="ExploreTandTEntites.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBExploreEntity.edmx</DependentUpon>
-      <LastGenOutput>DBExploreEntity.Context.cs</LastGenOutput>
+      <DependentUpon>ExploreTandTEntites.edmx</DependentUpon>
+      <LastGenOutput>ExploreTandTEntites.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DBExploreEntity.tt">
+    <Content Include="ExploreTandTEntites.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBExploreEntity.edmx</DependentUpon>
-      <LastGenOutput>DBExploreEntity.cs</LastGenOutput>
-    </Content>
-    <Content Include="Explore.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Explore.edmx</DependentUpon>
-      <LastGenOutput>Explore.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Explore.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Explore.edmx</DependentUpon>
-      <LastGenOutput>Explore.cs</LastGenOutput>
+      <DependentUpon>ExploreTandTEntites.edmx</DependentUpon>
+      <LastGenOutput>ExploreTandTEntites.cs</LastGenOutput>
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -346,19 +336,12 @@
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="images\pges" />
-    <EntityDeploy Include="DBExploreEntity.edmx">
+    <EntityDeploy Include="ExploreTandTEntites.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DBExploreEntity.Designer.cs</LastGenOutput>
+      <LastGenOutput>ExploreTandTEntites.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="DBExploreEntity.edmx.diagram">
-      <DependentUpon>DBExploreEntity.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Explore.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Explore.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Explore.edmx.diagram">
-      <DependentUpon>Explore.edmx</DependentUpon>
+    <Content Include="ExploreTandTEntites.edmx.diagram">
+      <DependentUpon>ExploreTandTEntites.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

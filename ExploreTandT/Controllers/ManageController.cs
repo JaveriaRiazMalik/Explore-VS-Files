@@ -13,6 +13,7 @@ namespace ExploreTandT.Controllers
     [Authorize]
     public class ManageController : Controller
     {
+        ExploreTandTEntites db = new ExploreTandTEntites();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 

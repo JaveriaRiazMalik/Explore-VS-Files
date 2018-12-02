@@ -14,6 +14,8 @@ namespace ExploreTandT
     
     public partial class SelectedPacakge
     {
+        internal int checkid;
+
         public string Name { get; set; }
         public string Category { get; set; }
         public string Places { get; set; }
@@ -26,6 +28,5 @@ namespace ExploreTandT
         public Nullable<System.DateTime> AddedOn { get; set; }
         public string AddedBy { get; set; }
         public int SelectedPacakgeId { get; set; }
-        public Nullable<int> checkid { get; set; }
     }
 }

@@ -9,14 +9,10 @@ namespace ExploreTandT.Controllers
 {
     public class PackagesController : Controller
     {
-
-        
-
-   
-
+        ExploreTandTEntites db = new ExploreTandTEntites();
         public ActionResult Index()
         {
-            ExploreEntities1 db = new ExploreEntities1();
+
             AdminViewModel userL = new AdminViewModel();
             var list = db.AllPackages.ToList();
             List<AllPackageViewModel> x = new List<AllPackageViewModel>();
@@ -69,7 +65,6 @@ namespace ExploreTandT.Controllers
         [HttpPost]
         public ActionResult Index(AdminViewModel collection)
         {
-            ExploreEntities1 db = new ExploreEntities1();
             AdminViewModel userL = new AdminViewModel();
             var list = db.AllPackages.ToList();
             List<AllPackageViewModel> x = new List<AllPackageViewModel>();
