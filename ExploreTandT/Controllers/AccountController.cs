@@ -16,7 +16,7 @@ namespace ExploreTandT.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        ExploreTandTEntites db = new ExploreTandTEntites();
+        ExploreEnt db = new ExploreEnt();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
         private string var = "admin@gmail.com";

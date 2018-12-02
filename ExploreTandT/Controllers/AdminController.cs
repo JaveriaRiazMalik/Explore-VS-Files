@@ -9,7 +9,7 @@ namespace ExploreTandT.Controllers
 {
     public class AdminController : Controller
     {
-        ExploreTandTEntites db = new ExploreTandTEntites();
+        ExploreEnt db = new ExploreEnt();
         // GET: Admin
         public ActionResult Index()
         {
@@ -61,7 +61,7 @@ namespace ExploreTandT.Controllers
 
         public ActionResult DeleteTourist(string id)
         {
-            ExploreTandTEntites db = new ExploreTandTEntites();
+            ExploreEnt db = new ExploreEnt();
             var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
             db.AspNetUsers.Remove(item);
             db.SaveChanges();

@@ -12,7 +12,7 @@ namespace ExploreTandT.Controllers
 {
     public class HomeController : Controller
     {
-        ExploreTandTEntites db = new ExploreTandTEntites();
+        ExploreEnt db = new ExploreEnt();
         public ActionResult Index()
         {
             return View();
