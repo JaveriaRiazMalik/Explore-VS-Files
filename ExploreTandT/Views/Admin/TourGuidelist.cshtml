@@ -14,7 +14,7 @@
             <img id="profile-img" class="profile-img-card" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
             <h2 class="Column2">Admin</h2>
             <!--<span class="glyphicon glyphicon-user" aria-hidden="true"></span>-->
-
+            <a href="~/Admin/dashboard/" type="button" class="btn btn-primary btn-responsive"> Back</a> />
             <p class="listText">List of Tour Guides</p>
 
             <div class="table-responsive">
@@ -53,7 +53,7 @@
                                 </td>
 
                                 <td>
-                                    @Html.ActionLink("Delete", "DeleteTourGuide", "Admin", new {id = item.Id}, new { @class = "btn btn-primary btn-responsive" })
+                                    @Html.ActionLink("Delete", "DeleteTourGuide", "Admin", new { id = item.Id }, new { @class = "btn btn-primary btn-responsive" })
                                 </td>
                             </tr>
                         }

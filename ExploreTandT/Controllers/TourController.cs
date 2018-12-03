@@ -8,7 +8,7 @@ namespace ExploreTandT.Controllers
 {
     public class TourController : Controller
     {
-        ExploreEnt db = new ExploreEnt();
+        ExploreEntities db = new ExploreEntities();
         // GET: Tour
         public ActionResult Index()
         {

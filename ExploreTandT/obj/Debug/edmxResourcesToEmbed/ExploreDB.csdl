@@ -128,7 +128,7 @@
     <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
     <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="ExploreEnt" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="ExploreEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
     <EntitySet Name="AllPackages" EntityType="Self.AllPackage" />
     <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />

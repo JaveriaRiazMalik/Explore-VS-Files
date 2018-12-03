@@ -9,7 +9,7 @@ namespace ExploreTandT.Controllers
 {
     public class PackagesController : Controller
     {
-        ExploreEnt db = new ExploreEnt();
+        ExploreEntities db = new ExploreEntities();
         public ActionResult Index()
         {
 
@@ -135,7 +135,7 @@ namespace ExploreTandT.Controllers
         
         public ActionResult FilterCategory(string id)
         {
-            ExploreEnt db = new ExploreEnt();
+            ExploreEntities db = new ExploreEntities();
             AdminViewModel userL = new AdminViewModel();
             var list = db.AllPackages.ToList();
             List<AllPackageViewModel> x = new List<AllPackageViewModel>();

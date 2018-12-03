@@ -13,10 +13,10 @@ namespace ExploreTandT
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ExploreEnt : DbContext
+    public partial class ExploreEntities : DbContext
     {
-        public ExploreEnt()
-            : base("name=ExploreEnt")
+        public ExploreEntities()
+            : base("name=ExploreEntities")
         {
         }
     

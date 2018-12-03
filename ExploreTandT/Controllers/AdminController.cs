@@ -9,7 +9,7 @@ namespace ExploreTandT.Controllers
 {
     public class AdminController : Controller
     {
-        ExploreEnt db = new ExploreEnt();
+        ExploreEntities db = new ExploreEntities();
         // GET: Admin
         public ActionResult Index()
         {
@@ -61,7 +61,7 @@ namespace ExploreTandT.Controllers
 
         public ActionResult DeleteTourist(string id)
         {
-            ExploreEnt db = new ExploreEnt();
+            ExploreEntities db = new ExploreEntities();
             var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
             db.AspNetUsers.Remove(item);
             db.SaveChanges();
@@ -142,9 +142,12 @@ namespace ExploreTandT.Controllers
                 p.Vehicle = collection.Vehicle;
                 p.Hotel = collection.Hotel;
                 p.Refreshments = collection.Refreshments;
-                db.AllPackages.Add(p);
+                if (p.Name != null && p.Schedule != null && p.Places != null && p.Range != 0 && p.Refreshments != null && p.TourGuide != null && p.Vehicle != null)
+                {
+                    db.AllPackages.Add(p);
 
-                db.SaveChanges();
+                    db.SaveChanges();
+                }
 
                 return RedirectToAction("dashboard", "Admin");
             }

@@ -22,101 +22,102 @@
                 {
                     @Html.AntiForgeryToken()
 
-                    <div class="form-horizontal">
+                <div class="form-horizontal">
 
-                        <hr />
-                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                        <div class="form-group">
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
 
-                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
-                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-validate" })
-                        </div>
-
-
-                        <div class="form-group">
-
-                            @{
-                                List<SelectListItem> Typedl = new List<SelectListItem>();
-                                Typedl.Add(new SelectListItem { Text = "Beaches", Value = "Beaches" });
-                                Typedl.Add(new SelectListItem { Text = "Forts", Value = "Forts" });
-                                Typedl.Add(new SelectListItem { Text = "Hill Stations", Value = "Hill Stations" });
-                                Typedl.Add(new SelectListItem { Text = "Historical places", Value = "Historical places" });
-                                Typedl.Add(new SelectListItem { Text = "Meadows", Value = "Meadows" });
-                                Typedl.Add(new SelectListItem { Text = "Monuments", Value = "Monuments" });
-                                Typedl.Add(new SelectListItem { Text = "Northern Areas", Value = "Northern Areas" });
-                                Typedl.Add(new SelectListItem { Text = "Waterfall", Value = "Waterfall" });
-
-                            }
-
-                            @Html.DropDownList("Category", Typedl, "Select category", new { @class = "form-control" });
-                        </div>
-
-
-                        <div class="form-group">
-
-                            @Html.EditorFor(model => model.Places, new { htmlAttributes = new { @class = "form-control", placeholder = "Place" } })
-                            @Html.ValidationMessageFor(model => model.Places, "", new { @class = "text-validate" })
-                        </div>
-
-
-                        <div class="form-group">
-
-                            @Html.EditorFor(model => model.Range, new { htmlAttributes = new { @class = "form-control", placeholder = "Range" } })
-                            @Html.ValidationMessageFor(model => model.Range, "", new { @class = "text-validate" })
-                        </div>
-
-
-                        
-                            <div class="form-group">
-
-                                <select name="TourGuide" id="TourGuide" class="form-control">
-                                    <option selected="" value="0">Select The Tour Guide</option>
-                                    @{
-                                        if (ViewBag.name != null)
-                                        {
-                                            foreach (var item in ViewBag.name)
-                                            {
-                                                <option value="@item">@item</option>
-                                            }
-                                        }
-                                    }
-                                </select>
-
-                            </div>
-                       
-
-
-                        <div class="form-group">
-
-                            @Html.EditorFor(model => model.Schedule, new { htmlAttributes = new { @class = "form-control", placeholder = "Schedule" } })
-                            @Html.ValidationMessageFor(model => model.Schedule, "", new { @class = "text-validate" })
-                        </div>
-
-
-                        <div class="form-group">
-
-                            @Html.EditorFor(model => model.Vehicle, new { htmlAttributes = new { @class = "form-control", placeholder = "Vehicle" } })
-                            @Html.ValidationMessageFor(model => model.Vehicle, "", new { @class = "text-validate" })
-                        </div>
-
-
-                        <div class="form-group">
-
-
-                            @Html.EditorFor(model => model.Hotel, new { htmlAttributes = new { @class = "form-control", placeholder = "Hotel" } })
-                            @Html.ValidationMessageFor(model => model.Hotel, "", new { @class = "text-validate" })
-                        </div>
-
-
-                        <div class="form-group">
-
-                            @Html.EditorFor(model => model.Refreshments, new { htmlAttributes = new { @class = "form-control", placeholder = "Refreshments" } })
-                            @Html.ValidationMessageFor(model => model.Refreshments, "", new { @class = "text-validate" })
-                        </div>
-
-
-                        <input type="submit" value="Add" class="btn btn-primary btn-responsive" />
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-validate" })
                     </div>
+
+
+                    <div class="form-group">
+
+                        @{
+                            List<SelectListItem> Typedl = new List<SelectListItem>();
+                            Typedl.Add(new SelectListItem { Text = "Beaches", Value = "Beaches" });
+                            Typedl.Add(new SelectListItem { Text = "Forts", Value = "Forts" });
+                            Typedl.Add(new SelectListItem { Text = "Hill Stations", Value = "Hill Stations" });
+                            Typedl.Add(new SelectListItem { Text = "Historical places", Value = "Historical places" });
+                            Typedl.Add(new SelectListItem { Text = "Meadows", Value = "Meadows" });
+                            Typedl.Add(new SelectListItem { Text = "Monuments", Value = "Monuments" });
+                            Typedl.Add(new SelectListItem { Text = "Northern Areas", Value = "Northern Areas" });
+                            Typedl.Add(new SelectListItem { Text = "Waterfall", Value = "Waterfall" });
+
+                        }
+
+                        @Html.DropDownList("Category", Typedl, "Select category", new { @class = "form-control" });
+                    </div>
+
+
+                    <div class="form-group">
+
+                        @Html.EditorFor(model => model.Places, new { htmlAttributes = new { @class = "form-control", placeholder = "Place" } })
+                        @Html.ValidationMessageFor(model => model.Places, "", new { @class = "text-validate" })
+                    </div>
+
+
+                    <div class="form-group">
+
+                        @Html.EditorFor(model => model.Range, new { htmlAttributes = new { @class = "form-control", placeholder = "Range" } })
+                        @Html.ValidationMessageFor(model => model.Range, "", new { @class = "text-validate" })
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <select name="TourGuide" id="TourGuide" class="form-control">
+                            <option selected="" value="0">Select The Tour Guide</option>
+                            @{
+                                if (ViewBag.name != null)
+                                {
+                                    foreach (var item in ViewBag.name)
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                                }
+                            }
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        @Html.EditorFor(model => model.Schedule, new { htmlAttributes = new { @class = "form-control", placeholder = "Schedule" } })
+                        @Html.ValidationMessageFor(model => model.Schedule, "", new { @class = "text-validate" })
+                    </div>
+
+
+                    <div class="form-group">
+
+                        @Html.EditorFor(model => model.Vehicle, new { htmlAttributes = new { @class = "form-control", placeholder = "Vehicle" } })
+                        @Html.ValidationMessageFor(model => model.Vehicle, "", new { @class = "text-validate" })
+                    </div>
+
+
+                    <div class="form-group">
+
+
+                        @Html.EditorFor(model => model.Hotel, new { htmlAttributes = new { @class = "form-control", placeholder = "Hotel" } })
+                        @Html.ValidationMessageFor(model => model.Hotel, "", new { @class = "text-validate" })
+                    </div>
+
+
+                    <div class="form-group">
+
+                        @Html.EditorFor(model => model.Refreshments, new { htmlAttributes = new { @class = "form-control", placeholder = "Refreshments" } })
+                        @Html.ValidationMessageFor(model => model.Refreshments, "", new { @class = "text-validate" })
+                    </div>
+
+
+                    <input type="submit" value="Add" class="btn btn-primary btn-responsive" />
+                    <a href="~/Admin/dashboard/" class="btn btn-primary btn-responsive" >Back</a>
+                </div>
 
                 }
             </div>

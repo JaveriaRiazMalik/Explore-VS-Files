@@ -8,11 +8,7 @@
         color: white;
     }
 
-    .form-group.required .control-label:before {
-        content: "*";
-        font-size:30px;
-        color: red;
-    }
+   
 </style> 
 <div id="RegisterForm">
     <div class="container">
@@ -28,7 +24,7 @@
                     {
                         @Html.AntiForgeryToken()
 
-<div class="form-group required control-label">
+
 
                     <div class="form-horizontal" >
                         <hr />
@@ -84,7 +80,7 @@
 
                         <input type="submit" value="Register" class="btn btn-primary btn-responsive" />
                     </div>
-    </div>
+   
                     }
                     </div>
                 </div>
