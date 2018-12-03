@@ -132,6 +132,39 @@ namespace ExploreTandT.Controllers
 
             return View(userL);
         }
+        
+        public ActionResult FilterCategory(string id)
+        {
+            ExploreEnt db = new ExploreEnt();
+            AdminViewModel userL = new AdminViewModel();
+            var list = db.AllPackages.ToList();
+            List<AllPackageViewModel> x = new List<AllPackageViewModel>();
+
+            foreach (var i in list)
+            {
+                if (i.Category == id)
+                {
+                    AllPackageViewModel v = new AllPackageViewModel();
+                    v.Category = i.Category;
+                    v.Name = i.Name;
+                    v.Places = i.Places;
+                    v.Range = Convert.ToInt16(i.Range);
+                    v.TourGuide = i.TourGuide;
+                    v.Schedule = i.Schedule;
+                    v.Vehicle = i.Vehicle;
+                    v.Hotel = i.Hotel;
+                    v.Refreshments = i.Refreshments;
+                    v.packageId = i.PackageId;
+
+                    userL.listofpackages.Add(v);
+                }
+            }
+            return View(userL) ;
+        }
+        public ActionResult Testing(string id)
+        {
+            return Content(Convert.ToString(id));
+        }
         // GET: Packages/Details/5
         public ActionResult Details(int id)
         {

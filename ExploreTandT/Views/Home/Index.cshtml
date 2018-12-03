@@ -2,233 +2,239 @@
     ViewBag.Title = "Home Page";
 }
 <!-- Video Start -->
-<header>
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="~/video/myvideo.mp4" type="video/mp4">
-    </video>
-    <div class="container h-100">
-        <div class="d-flex text-center h-100" style="margin-top: 20px">
-            <div class="my-auto w-100 text-white">
-                <h1 class="display-3" style="  font-size: 77px;color: white;
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="~/video/myvideo.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex text-center h-100" style="margin-top: 20px">
+                <div class="my-auto w-100 text-white">
+                    <h1 class="display-3" style="  font-size: 77px;color: white;
     font-weight: 700;">
-                    Discover the World
-                </h1>
-                <h2 style="    color: white;
+                        Discover the World
+                    </h1>
+                    <h2 style="    color: white;
     font-weight: 700;">
-                    Make Memories and have a Lot of Fun!!!
-                </h2>
-                <h4 style="color: white;
+                        Make Memories and have a Lot of Fun!!!
+                    </h2>
+                    <h4 style="color: white;
     font-size: 30px;
     letter-spacing: 7px;">
-                    There is nothing quite like traveling, like seeing a new place for the first time or returning to a favorite place. People of all ages, from all countries, travel to foreign places for many different reasons.
-                </h4>
+                        There is nothing quite like traveling, like seeing a new place for the first time or returning to a favorite place. People of all ages, from all countries, travel to foreign places for many different reasons.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Video End -->
+    <!-- Jumbotron Black Start -->
+    <div class="jumbotron jumbotron-primary">
+        <div class="container">
+            <div class="col-lg-9">
+                <h2>Everything you need to know about Travel.</h2>
+                <p class="lead">THE IMPULSE TO TRAVEL IS ONE OF THE HOPEFUL SYMPTOMS OF LIFE!</p>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <a class="btn btn-primary" type="button" href="~/Packages/Index/">Travel With Us</a>
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-</header>
-<!-- Video End -->
-<!-- Jumbotron Black Start -->
-<div class="jumbotron jumbotron-primary">
+    <!-- jumbotron End -->
+    <!-- Image Start -->
+    <!-- Image End -->
+    <!-- Cards Start -->
     <div class="container">
-        <div class="col-lg-9">
-            <h2>Everything you need to know about Travel.</h2>
-            <p class="lead">TRAVEL IS THE ONLY THING YOU BUY THAT MAKES YOU RICHER!</p>
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <a class="btn btn-primary" type="button" href="~/Packages/Index/">Travel With Us</a>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- jumbotron End -->
-<!-- Image Start -->
-<!-- Image End -->
-<!-- Cards Start -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
-                <p style="text-align:center;">
-                    <img src="~/images/travel.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Historical Places</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
+                    <p style="text-align:center;">
+                        <img src="~/images/Historical.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Historical Places</h3>
+                            <p>Old places have souls...</p>
+                           
+                            <a href="~/Packages/FilterCategory/Historical places/" class=" btn btn-default"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc;margin-bottom: 20px;">
-                <p style="text-align:center;">
-                    <img src="~/images/el_nido_hidden_beach.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Northern Areas</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc;margin-bottom: 20px;">
+                    <p style="text-align:center;">
+                        <img src="~/images/Northern.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Northern Areas</h3>
+                            <p>"Drive slow and enjoy the scenery-drive fast and join the scenery" ~Douglas Horton</p>
+                            <a class=" btn btn-default" href="~/Packages/FilterCategory/Northern Areas/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
-                <p style="text-align:center; ">
-                    <img src="~/images/monal.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Monuments</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
+                    <p style="text-align:center; ">
+                        <img src="~/images/Monuments.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Monuments</h3>
+                            <p>"Monuments are the grapling-irons that bind one generation to another" ~Joseph Jobert</p>
+                            <a class=" btn btn-default" href="~/Packages/FilterCategory/Monuments/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
-                <p style="text-align:center;">
-                    <img src="~/images/4.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Beaches</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
+                    <p style="text-align:center;">
+                        <img src="~/images/Beach.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Beaches</h3>
+                            <p>"Smell the sea and feel the sky Let your soul and spirit fly" ~Van Morrison</p>
+                            <a class=" btn btn-default" href="~/Packages/FilterCategory/Beaches/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
-                <p style="text-align:center;">
-                    <img src="~/images/3.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;"> Valleys</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
+                    <p style="text-align:center;">
+                        <img src="~/images/3.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;"> Waterfall</h3>
+                            <p>"Just let go - and fall like a little waterfall" ~Bob Ross</p>
+                            <a class=" btn btn-default" href="~/Packages/FilterCategory/Waterfall/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
-                <p style="text-align:center;">
-                    <img src="~/images/8.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;"> Others</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages//"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc; margin-bottom: 20px;">
+                    <p style="text-align:center;">
+                        <img src="~/images/Hillstation.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;"> Hill Station</h3>
+                            <p>"Half the fun of travel is the esthetic of Lostness" ~Ray Bradbury</p>
+                            <a class=" btn btn-default" href="~/Packages/FilterCategory/Hill Stations/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc;margin-bottom: 20px;">
-                <p style="text-align:center;">
-                    <img src="~/images/6.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Kashmir Valley</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc;margin-bottom: 20px;">
+                    <p style="text-align:center;">
+                        <img src="~/images/Meadows.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Meadows</h3>
+                            <p>"Many eyes go through the meadow, but few see the flowers in it" ~Ralph Waldo Emorson</p>
+                            <a class=" btn btn-default" href="~/Packages/FilterCategory/Meadows/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="cuadro_intro_hover " style="background-color:#cccccc;margin-bottom: 20px;">
-                <p style="text-align:center;">
-                    <img src="~/images/7.jpg" class="img-responsive" alt="">
-                </p>
-                <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                        <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Naran Kaghan</h3>
-                        <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                        <a class=" btn btn-default" href="~/Tour/RelatedPackages/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+            <div class="col-lg-3">
+                <div class="cuadro_intro_hover " style="background-color:#cccccc;margin-bottom: 20px;">
+                    <p style="text-align:center;">
+                        <img src="~/images/Fort.jpg" class="img-responsive" alt="">
+                    </p>
+                    <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                            <h3 style="border-top:2px solid #eb2251; border-bottom:2px solid red; padding:10px;">Forts</h3>
+                            <p>Hold the Fort for I am coming</p>
+                            <a class=" btn btn-default" href="~/Packages/FilterCategory/Forts/"><span class="glyphicon glyphicon-plus"> Get Package</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Cards End -->
-<!-- Testimonial Start -->
-<div id="test">
-    <section class="testimonial-section2">
-        <div class="row text-center">
-            <div class="col-12">
-                <div class="reviews">
-                    <div class="h2">Reviews</div>
+
+    <!-- Cards End -->
+    <!-- Testimonial Start -->
+    <div id="test">
+        <section class="testimonial-section2">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="reviews">
+                        <div class="h2">Creators</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="testim" class="testim">
+            <div id="testim" class="testim">
 
-            <!--         <div class="testim-cover"> -->
-            <div class="wrap">
+                <!--         <div class="testim-cover"> -->
+                <div class="wrap">
 
-                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                <ul id="testim-dots" class="dots">
-                    <li class="dot active"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                 
-                </ul>
-                <div id="testim-content" class="cont">
-                    <div class="active">
-                        <div class="img"><img src="~/images/Khadija.png" alt=""></div>
-                        <div class="h4" style="color:#FFFFFF">Khadija Zahoor</div>
-                        <p>I would rather own a little and see the world,than own the world and see a little of it.</p>
+                    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                    <ul id="testim-dots" class="dots">
+                        <li class="dot active"></li>
+                        <!--
+                        -->
+                        <li class="dot"></li>
+                        <!--
+                        -->
+                        <li class="dot"></li>
+                        <!--
+                        -->
+                        <li class="dot"></li>
+
+                    </ul>
+                    <div id="testim-content" class="cont">
+                        <div class="active">
+                            <div class="img"><img src="~/images/Khadija.png" alt=""></div>
+                            <div class="h4" style="color:#FFFFFF">Khadija Zahoor</div>
+                            <p>I would rather own a little and see the world,than own the world and see a little of it.</p>
+                        </div>
+
+                        <div>
+                            <div class="img"><img src="~/images/Javeria.jpeg" alt=""></div>
+                            <div class="h4" style="color:#FFFFFF">Javeria Riaz</div>
+                            <p>It is not the destination where you end up but the mishaps and memories you create along the way.</p>
+                        </div>
+
+                        <div>
+                            <div class="img"><img src="~/images/Summen.jpeg" alt=""></div>
+                            <div class="h4" style="color:#FFFFFF">Summen Zahid</div>
+                            <p>Better to see something once than hear about it a thousand times.</p>
+                        </div>
+
+                        <div>
+                            <div class="img"><img src="~/images/Rahma.jpeg" alt=""></div>
+                            <div class="h4" style="color:#FFFFFF">Rahma Tahir</div>
+                            <p>Because in the end,you wn't remember the time you spent working in the office or mowing your lawn.Climb that goddamn mountain.</p>
+                        </div>
+
                     </div>
-
-                    <div>
-                        <div class="img"><img src="~/images/Javeria.jpeg" alt=""></div>
-                        <div class="h4" style="color:#FFFFFF">Javeria Riaz</div>
-                        <p>It is not the destination where you end up but the mishaps and memories you create along the way.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="~/images/Summen.jpeg" alt=""></div>
-                        <div class="h4" style="color:#FFFFFF">Summen Zahid</div>
-                        <p>Better to see something once than hear about it a thousand times.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="~/images/Rahma.jpeg" alt=""></div>
-                        <div class="h4" style="color:#FFFFFF">Rahma Tahir</div>
-                        <p>Because in the end,you wn't remember the time you spent working in the office or mowing your lawn.Climb that goddamn mountain.</p>
-                    </div>
-
                 </div>
             </div>
-        </div>
-        <!--         </div> -->
-    </section>
-</div>
+            <!--         </div> -->
+        </section>
+    </div>
+}

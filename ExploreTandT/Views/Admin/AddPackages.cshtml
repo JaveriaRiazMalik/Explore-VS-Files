@@ -37,14 +37,15 @@
 
                             @{
                                 List<SelectListItem> Typedl = new List<SelectListItem>();
-                                Typedl.Add(new SelectListItem { Text = "Historical places", Value = "Historical places" });
-                                Typedl.Add(new SelectListItem { Text = "Northern Areas", Value = "Northern Areas" });
-                                Typedl.Add(new SelectListItem { Text = "Monuments", Value = "Monuments" });
                                 Typedl.Add(new SelectListItem { Text = "Beaches", Value = "Beaches" });
-                                Typedl.Add(new SelectListItem { Text = "Meadows", Value = "Meadows" });
-                                Typedl.Add(new SelectListItem { Text = "Waterfall", Value = "Waterfall" });
-                                Typedl.Add(new SelectListItem { Text = "Hill Stations", Value = "Hill Stations" });
                                 Typedl.Add(new SelectListItem { Text = "Forts", Value = "Forts" });
+                                Typedl.Add(new SelectListItem { Text = "Hill Stations", Value = "Hill Stations" });
+                                Typedl.Add(new SelectListItem { Text = "Historical places", Value = "Historical places" });
+                                Typedl.Add(new SelectListItem { Text = "Meadows", Value = "Meadows" });
+                                Typedl.Add(new SelectListItem { Text = "Monuments", Value = "Monuments" });
+                                Typedl.Add(new SelectListItem { Text = "Northern Areas", Value = "Northern Areas" });
+                                Typedl.Add(new SelectListItem { Text = "Waterfall", Value = "Waterfall" });
+
                             }
 
                             @Html.DropDownList("Category", Typedl, "Select category", new { @class = "form-control" });

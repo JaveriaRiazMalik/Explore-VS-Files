@@ -287,9 +287,13 @@
     <Content Include="images\Admin.jpeg" />
     <Content Include="images\all packages.jpeg" />
     <Content Include="images\backg.jpeg" />
+    <Content Include="images\Beach.jpg" />
     <Content Include="images\DjgjSXyX0AIh3z5.jpg" />
     <Content Include="images\Edit Details.jpeg" />
     <Content Include="images\el_nido_hidden_beach.jpg" />
+    <Content Include="images\Fort.jpg" />
+    <Content Include="images\Hillstation.jpg" />
+    <Content Include="images\Historical.jpg" />
     <Content Include="images\images.png" />
     <Content Include="images\Javeria.jpeg" />
     <Content Include="images\Kashmir-Valley %281%29.jpg" />
@@ -302,7 +306,10 @@
     <Content Include="images\login %285%29.jpeg" />
     <Content Include="images\logo.jpeg" />
     <Content Include="images\m.jpg" />
+    <Content Include="images\Meadows.jpg" />
     <Content Include="images\monal.jpg" />
+    <Content Include="images\Monuments.jpg" />
+    <Content Include="images\Northern.jpg" />
     <Content Include="images\profile.jpg" />
     <Content Include="images\Rahma.jpeg" />
     <Content Include="images\Rakaposhi,_Nagar_GB_%28Pakistan%29.jpg" />
@@ -393,6 +400,7 @@
     <Content Include="Views\Packages\Index.cshtml" />
     <Content Include="Views\Admin\Delete.cshtml" />
     <Content Include="Views\Account\Select.cshtml" />
+    <Content Include="Views\Packages\FilterCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

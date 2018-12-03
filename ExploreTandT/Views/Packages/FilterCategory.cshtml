@@ -1,0 +1,115 @@
+﻿@model ExploreTandT.Models.AdminViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div id="AllPackages">
+            <div class="container">
+                <h1 class="Packages">Packages</h1>
+                <p class="listText">List of Selected Category</p>
+ 
+                <div class="row">
+                    <div class="col-xs-2">
+
+                        <a href="~/Packages/Index/" type="button" class="btn btn-primary btn-responsive"> All Packages</a> />
+
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+
+
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Name)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Category)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Places)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Range)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].TourGuide)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Schedule)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Vehicle)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Hotel)
+                                </th>
+                                <th scope="col">
+                                    @Html.DisplayNameFor(model => model.listofpackages[0].Refreshments)
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model.listofpackages)
+                            {
+                                <tr>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Category)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Places)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Range)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TourGuide)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Schedule)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Vehicle)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Hotel)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Refreshments)
+                                    </td>
+                                    <td>
+
+                                        <a href="~/Account/Select/@item.packageId" type="button" class="btn btn-primary btn-responsive">Select</a>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    }
+</body>
+
+
+
+
