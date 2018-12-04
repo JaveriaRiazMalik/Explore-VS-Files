@@ -147,9 +147,12 @@ namespace ExploreTandT.Controllers
                     db.AllPackages.Add(p);
 
                     db.SaveChanges();
+                    return RedirectToAction("dashboard", "Admin");
                 }
-
-                return RedirectToAction("dashboard", "Admin");
+                else
+                {
+                    return View();
+                }
             }
             catch
             {

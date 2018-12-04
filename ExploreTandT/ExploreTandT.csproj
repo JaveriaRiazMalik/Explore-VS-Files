@@ -244,9 +244,13 @@
     <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ReviewsModel.cs" />
     <Compile Include="Models\SelectedPackagesViewModel.cs" />
     <Compile Include="Models\UserAccountViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Review.cs">
+      <DependentUpon>ExploreDb.tt</DependentUpon>
+    </Compile>
     <Compile Include="SelectedPacakge.cs">
       <DependentUpon>ExploreDb.tt</DependentUpon>
     </Compile>
@@ -401,6 +405,8 @@
     <Content Include="Views\Admin\Delete.cshtml" />
     <Content Include="Views\Account\Select.cshtml" />
     <Content Include="Views\Packages\FilterCategory.cshtml" />
+    <Content Include="Views\Account\Reviews.cshtml" />
+    <Content Include="Views\Account\ShowReview.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

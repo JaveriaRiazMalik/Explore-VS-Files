@@ -32,5 +32,6 @@ namespace ExploreTandT
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<SelectedPacakge> SelectedPacakges { get; set; }
+        public virtual DbSet<Review> Reviews { get; set; }
     }
 }

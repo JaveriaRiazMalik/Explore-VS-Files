@@ -11,6 +11,6 @@ namespace ExploreTandT.Models
 
         public List<RegisterViewModel> listofusers = new List<RegisterViewModel>();
 
-       
+        public List<ReviewsModel> StoreReview = new List<ReviewsModel>();
     }
 }

@@ -430,6 +430,55 @@ namespace ExploreTandT.Controllers
 
         }
 
+        public ActionResult Reviews()
+        {
+            return View();
+
+        }
+        [HttpPost]
+        public ActionResult Reviews(ReviewsModel review)
+        {
+            ExploreEntities db = new ExploreEntities();
+            string userid = User.Identity.GetUserId();
+            var loginuser = db.AspNetUsers.Where(y => y.Id == userid);
+            Review x = new Review();
+            var nameofloginuser = db.AspNetUsers.ToList();
+            foreach (var d in nameofloginuser)
+            {
+                if (d.Id == userid)
+                {
+                    x.Name = d.Name;
+                    x.Reviews = review.Reviews;
+                    db.Reviews.Add(x);
+
+                    db.SaveChanges();
+                }
+            }
+            return RedirectToAction("ShowReview", "Account");
+
+
+        }
+
+        public ActionResult ShowReview()
+        {
+
+            ExploreEntities d = new ExploreEntities();
+            var storeReviews = d.Reviews.ToList();
+            UserAccountViewModel userl = new UserAccountViewModel();
+
+            foreach (var t in storeReviews)
+            {
+                ReviewsModel r = new ReviewsModel();
+                r.Name = t.Name;
+                r.Reviews = t.Reviews;
+                userl.StoreReview.Add(r);
+
+            }
+            return View(userl);
+        }
+
+
+
         public ActionResult Select(int id)
         {
 
@@ -443,7 +492,7 @@ namespace ExploreTandT.Controllers
             {
                 foreach(var e in checklist)
                 {
-                    if(e.checkid == id)
+                    if(e.checkid == id && userid == e.AddedBy)
                     {
                         check = true;
                     }
@@ -478,9 +527,18 @@ namespace ExploreTandT.Controllers
 
         public ActionResult CancelPackage(int id)
         {
-            var item = db.SelectedPacakges.Where(x => x.checkid == id).SingleOrDefault();
-            db.SelectedPacakges.Remove(item);
-            db.SaveChanges();
+            ExploreEntities db = new ExploreEntities();
+            string userid = User.Identity.GetUserId();
+            var package = db.SelectedPacakges.ToList();
+
+            foreach (var x in package)
+            {
+                if (x.AddedBy == userid && x.checkid == id)
+                {
+                    db.SelectedPacakges.Remove(x);
+                    db.SaveChanges();
+                }
+            }
             return RedirectToAction("Index", "Account");
         }
 
