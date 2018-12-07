@@ -407,6 +407,8 @@
     <Content Include="Views\Packages\FilterCategory.cshtml" />
     <Content Include="Views\Account\Reviews.cshtml" />
     <Content Include="Views\Account\ShowReview.cshtml" />
+    <Content Include="Views\Admin\DeleteT.cshtml" />
+    <Content Include="Views\Admin\DeleteTourist.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

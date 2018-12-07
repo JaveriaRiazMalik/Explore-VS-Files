@@ -9,7 +9,7 @@ namespace ExploreTandT.Models
     public class AllPackageViewModel
     {
         [Required]
-        [Display(Name = "Name")]
+        [Display(Name = "Package Name")]
         [RegularExpression(@"^[a-zA-Z ]*$", ErrorMessage = "Name should be in Alphabets")]
         public string Name { get; set; }
 
@@ -21,7 +21,10 @@ namespace ExploreTandT.Models
         [RegularExpression(@"^[a-zA-Z ]*$", ErrorMessage = "Place should be in Valid")]
         public string Places {get; set;}
 
-
+        [Required(ErrorMessage = "Pleasee enter Valid Expense")]
+        [DataType(DataType.Currency)]
+        [Range(1, 9999, ErrorMessage = "Enter Range between 1 and 9999")]
+        [RegularExpression(@"^(((\d{1})*))$", ErrorMessage = "Enter Valid Expense")]
         public int Range { get; set; }
 
         public string TourGuide { get; set; }

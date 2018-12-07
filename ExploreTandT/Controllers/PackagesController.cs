@@ -43,7 +43,7 @@ namespace ExploreTandT.Controllers
                 city.Add(u.Places);
 
             }
-
+            city.Sort();
             ViewBag.city = city;
 
             List<int> range = new List<int>();
@@ -54,7 +54,7 @@ namespace ExploreTandT.Controllers
                 range.Add(Convert.ToInt16(u.Range));
 
             }
-
+            range.Sort();
             ViewBag.range = range;
 
 
@@ -115,7 +115,7 @@ namespace ExploreTandT.Controllers
                 city.Add(u.Places);
 
             }
-
+            city.Sort();
             ViewBag.city = city;
 
             List<int> range = new List<int>();
@@ -126,7 +126,7 @@ namespace ExploreTandT.Controllers
                 range.Add(Convert.ToInt16(u.Range));
 
             }
-
+            range.Sort();
             ViewBag.range = range;
 
 

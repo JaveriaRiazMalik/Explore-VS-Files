@@ -3,7 +3,14 @@
 @{
     ViewBag.Title = "Index";
 }
-
+@if(ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("ViewBag.Message");
+        };
+    </script>
+}
 <div id="Admin_Account">
     <div class="container">
         <h1 class="AdminAccount"></h1>
@@ -20,9 +27,9 @@
                     @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
                     {
                         @Html.AntiForgeryToken()
-                    <a href="javascript:document.getElementById('logoutForm').submit()" type="button" class="btn btn-primary btn-responsive">LogOff </a>
+                        <a href="javascript:document.getElementById('logoutForm').submit()" type="button" class="btn btn-primary btn-responsive">LogOff </a>
                     }
-                    
+
                 </div>
             </div>
 
@@ -39,35 +46,35 @@
                             <th scope="col"> @Html.DisplayNameFor(model => model.listofusers[0].Address)</th>
                             <th scope="col">  @Html.DisplayNameFor(model => model.listofusers[0].CNIC)</th>
                             <th scope="col"> @Html.DisplayNameFor(model => model.listofusers[0].PhoneNumber)</th>
-                          
+
 
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var item in Model.listofusers)
                         {
-                        <tr>
+                            <tr>
 
-                            <th scope="row">
-                                @Html.DisplayFor(modelItem => item.Name)
-                            </th>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Email)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Address)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.CNIC)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.PhoneNumber)
-                            </td>
-                           
-                            <td>
-                                <a href="~/Account/Edit/" type="button" class="btn btn-primary btn-responsive">Edit Details </a>
-                            </td>
-                        </tr>
+                                <th scope="row">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Address)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CNIC)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                                </td>
+
+                                <td>
+                                    <a href="~/Account/Edit/" type="button" class="btn btn-primary btn-responsive">Edit Details </a>
+                                </td>
+                            </tr>
                         }
 
                     </tbody>
@@ -81,7 +88,7 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            
+
                             <th scope="col"> @Html.DisplayNameFor(model => model.listofpackages[0].Name)</th>
                             <th scope="col">  @Html.DisplayNameFor(model => model.listofpackages[0].Category)</th>
                             <th scope="col"> @Html.DisplayNameFor(model => model.listofpackages[0].Places)</th>
@@ -98,7 +105,7 @@
                         @foreach (var item in Model.listofpackages)
                         {
                             <tr>
-                              
+
                                 <th scope="row">
                                     @Html.DisplayFor(modelItem => item.Name)
                                 </th>
@@ -131,9 +138,9 @@
                                 </td>
                                 <td>
 
-                                    <a href="~/Account/CancelPackage/@item.checkid/" type="button" class="btn btn-primary btn-responsive">Cancel</a>
+                                    <a href="~/Account/CancelPackage/@item.checkid/" type="button" class="btn btn-primary btn-responsive" onclick = "return confirm('Are you sure you wish to Cancel this Package?');" >Cancel</a>
                                 </td>
-                               
+
                             </tr>
                         }
 
@@ -144,3 +151,13 @@
     </div>
 
 </div>
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Message");
+        };
+    </script>
+}
+
+

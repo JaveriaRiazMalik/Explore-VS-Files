@@ -514,12 +514,13 @@ namespace ExploreTandT.Controllers
                     db.SelectedPacakges.Add(c);
 
                     db.SaveChanges();
-
+         
                 }  
                 return RedirectToAction("Index", "Account");
             }
             else
             {
+                ViewBag.Message = "You have to login  first to Select any Package";
                 return Redirect("~/Account/Login");
             }
                 

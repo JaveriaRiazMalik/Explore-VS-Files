@@ -50,23 +50,29 @@ namespace ExploreTandT.Controllers
             return View(user);
         }
 
-        public ActionResult DeleteTourGuide(string id)
-        {
-            var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
-            db.AspNetUsers.Remove(item);
-            db.SaveChanges();
-
-            return RedirectToAction("TourGuidelist");
-        }
-
         public ActionResult DeleteTourist(string id)
         {
-            ExploreEntities db = new ExploreEntities();
-            var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
-            db.AspNetUsers.Remove(item);
-            db.SaveChanges();
+            return View();
+        }
 
-            return RedirectToAction("Touristlist");
+        // POST: Tourist/Delete/5
+        [HttpPost]
+        public ActionResult DeleteTourist(string id, FormCollection collection)
+        {
+            try
+            {
+
+                ExploreEntities db = new ExploreEntities();
+                var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
+                db.AspNetUsers.Remove(item);
+                db.SaveChanges();
+
+                return RedirectToAction("Touristlist");
+            }
+            catch
+            {
+                return View();
+            }
         }
 
         public ActionResult Packagelist()
@@ -110,18 +116,12 @@ namespace ExploreTandT.Controllers
 
                 }
             }
+            name.Sort();
 
             ViewBag.name = name;
             return View();
         }
-
-       public ActionResult DeletePackage(int id)
-        {
-            var item = db.AllPackages.Where(x => x.PackageId == id).SingleOrDefault();
-            db.AllPackages.Remove(item);
-            db.SaveChanges();
-            return RedirectToAction("Packagelist");
-        }
+        
 
         [HttpPost]
         public ActionResult AddPackages(AllPackageViewModel collection)
@@ -145,9 +145,10 @@ namespace ExploreTandT.Controllers
                 if (p.Name != null && p.Schedule != null && p.Places != null && p.Range != 0 && p.Refreshments != null && p.TourGuide != null && p.Vehicle != null)
                 {
                     db.AllPackages.Add(p);
-
+                    
                     db.SaveChanges();
-                    return RedirectToAction("dashboard", "Admin");
+                    
+                    return RedirectToAction("Dashboard","Admin");
                 }
                 else
                 {
@@ -161,7 +162,55 @@ namespace ExploreTandT.Controllers
 
         }
 
-        
+        // GET: TourGuide/Delete/5
+        public ActionResult DeleteT(string id)
+        {
+            return View();
+        }
+
+        // POST: TourGuide/Delete/5
+        [HttpPost]
+        public ActionResult DeleteT(string id, FormCollection collection)
+        {
+            try
+            {
+                var item = db.AspNetUsers.Where(x => x.Id == id).SingleOrDefault();
+                db.AspNetUsers.Remove(item);
+                db.SaveChanges();
+
+                return RedirectToAction("TourGuidelist");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: Packages/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: Packages/Delete/5
+        [HttpPost]
+        public ActionResult Delete(int id, FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add delete logic here
+                var item = db.AllPackages.Where(x => x.PackageId == id).SingleOrDefault();
+                db.AllPackages.Remove(item);
+                db.SaveChanges();
+                return RedirectToAction("Packagelist");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+
     }
 
 }

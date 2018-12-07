@@ -71,7 +71,7 @@ namespace ExploreTandT.Models
 
         [Required]
         [Display(Name ="Phone")]
-       [RegularExpression(@"^[0-9]+$" , ErrorMessage = "Phone Number should be in digits")]
+        [StringLength(11, ErrorMessage = "Phone Number must be 11 digits.", MinimumLength = 11)]
         public string PhoneNumber { get; set; }
 
         [Required]
@@ -84,7 +84,7 @@ namespace ExploreTandT.Models
         public string CNIC { get; set; }
 
         [Required]
-        [Display(Name = "Name")]
+        [Display(Name = "Your Full Name")]
         [RegularExpression(@"^[a-zA-Z ]*$", ErrorMessage = "Name should be in Alphabets")]
         public string Name { get; set; }
 
