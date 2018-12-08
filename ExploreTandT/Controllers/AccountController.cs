@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ExploreTandT.Models;
 using System.Collections.Generic;
+using System.IO;
 
 namespace ExploreTandT.Controllers
 {
@@ -158,7 +159,22 @@ namespace ExploreTandT.Controllers
         public async Task<ActionResult> Register(RegisterViewModel model)
 
         {
-            var user = new ApplicationUser { PhoneNumber = model.PhoneNumber, UserName = model.Email, Email = model.Email, Address = model.Address, CNIC = model.CNIC, Name = model.Name, Type = model.Type };
+            if (model.Image != null)
+            {
+                string filename = Path.GetFileNameWithoutExtension(model.Image.FileName);
+                string ext = Path.GetExtension(model.Image.FileName);
+                filename = filename + DateTime.Now.Millisecond.ToString();
+                filename = filename + ext;
+                string filetodb = "/Image/" + filename;
+                filename = Path.Combine(Server.MapPath("~/Image/"), filename);
+                model.Image.SaveAs(filename);
+                model.ImagePath = filetodb;
+            }
+            else
+            {
+                model.ImagePath = "/Images/images.jpg";
+            }
+            var user = new ApplicationUser { PhoneNumber = model.PhoneNumber, UserName = model.Email, Email = model.Email, Address = model.Address, CNIC = model.CNIC, Name = model.Name, Type = model.Type , ImagePath = model.ImagePath};
             var result = await UserManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
@@ -176,6 +192,33 @@ namespace ExploreTandT.Controllers
 
             // If we got this far, something failed, redisplay form
             return View(model);
+        }
+
+
+
+        public ActionResult ChangeImage()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ChangeImage(ImageViewModel collection)
+        {
+            string filename = Path.GetFileNameWithoutExtension(collection.Image.FileName);
+            string ext = Path.GetExtension(collection.Image.FileName);
+            filename = filename + DateTime.Now.Millisecond.ToString();
+            filename = filename + ext;
+            string filetodb = "/Image/" + filename;
+            filename = Path.Combine(Server.MapPath("~/Image/"), filename);
+            collection.Image.SaveAs(filename);
+            ExploreEntities db = new ExploreEntities();
+            string id = User.Identity.GetUserId();
+            var user = db.AspNetUsers.Where(x => x.Id == id).First();
+            user.ImagePath = filetodb;
+            db.SaveChanges();
+            string message = "Your Picture is Updated " + user.Name;
+
+            return RedirectToAction("Index", "Account", new { Message = message });
         }
 
         //
@@ -557,6 +600,7 @@ namespace ExploreTandT.Controllers
             loggedinuser.PhoneNumber = person.PhoneNumber;
             user.listofusers.Add(loggedinuser);
 
+            ViewBag.Image = person.ImagePath;
 
             List<SelectedPackagesViewModel> l = new List<SelectedPackagesViewModel>();
             var packageslist = db.SelectedPacakges.ToList();

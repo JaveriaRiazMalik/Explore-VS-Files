@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Web;
 
 namespace ExploreTandT.Models
 {
@@ -64,6 +65,12 @@ namespace ExploreTandT.Models
 
     public class RegisterViewModel
     {
+
+        [Display(Name = "Add Image")]
+        public HttpPostedFileBase Image { get; set; }
+        [Display(Name = "Add Image")]
+        public string ImagePath { get; set; } 
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

@@ -67,7 +67,7 @@
     <Property Name="CNIC" Type="nvarchar" MaxLength="50" />
     <Property Name="Address" Type="nvarchar(max)" />
     <Property Name="Name" Type="nvarchar(max)" />
-    <Property Name="Email" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
     <Property Name="PhoneNumber" Type="nvarchar(max)" />
     <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
     <Property Name="PasswordHash" Type="nvarchar(max)" />
@@ -79,14 +79,15 @@
     <Property Name="AccessFailedCount" Type="int" Nullable="false" />
     <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
     <Property Name="Type" Type="nvarchar(max)" />
+    <Property Name="ImagePath" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Reviews">
     <Key>
-      <PropertyRef Name="ReviewsID" />
+      <PropertyRef Name="ReviewID" />
     </Key>
-    <Property Name="ReviewsID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
     <Property Name="Reviews" Type="varchar(max)" />
-    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReviewID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="SelectedPacakges">
     <Key>

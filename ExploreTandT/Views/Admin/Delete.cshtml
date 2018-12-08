@@ -25,11 +25,11 @@
             @using (Html.BeginForm())
             {
                 @Html.AntiForgeryToken()
-                <div class="form-actions no-color" , style="text-align:center">
-                   
-                        <input type="submit" value="Delete" class="btn btn-primary btn-responsive" /> 
-                        @Html.ActionLink("Back to List", "~/Admin/Packagelist/")
-                    </div>
+            <div class="form-actions no-color" , style="text-align:center">
+
+                <input type="submit" value="Delete" class="btn btn-primary btn-responsive" />
+                <a href="~/Admin/Packagelist/" type="button" class="btn btn-primary btn-responsive"> No</a>
+            </div>
                     }
                 </div>
             </div>

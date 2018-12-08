@@ -62,7 +62,7 @@
     <Property Name="CNIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
     <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
     <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -77,6 +77,7 @@
     <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
     <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
     <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+    <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="SelectedPacakge">
     <Key>
@@ -152,10 +153,10 @@
   </EntityContainer>
   <EntityType Name="Review">
     <Key>
-      <PropertyRef Name="ReviewsID" />
+      <PropertyRef Name="ReviewID" />
     </Key>
-    <Property Name="ReviewsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Reviews" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ReviewID" Type="Int32" Nullable="false" />
   </EntityType>
 </Schema>

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Rahama Tahir\3D Objects\Explore-VS-Files\ExploreTandT\ExploreDb.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Javeria Riaz\Desktop\Explore-VS-Files\ExploreTandT\ExploreDb.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
