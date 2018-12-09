@@ -390,11 +390,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Tour\AllPackages.cshtml" />
-    <Content Include="Views\Tour\AdminAccount.cshtml" />
-    <Content Include="Views\Tour\GetPackage.cshtml" />
-    <Content Include="Views\Tour\PackageConfirmation.cshtml" />
-    <Content Include="Views\Tour\RelatedPackages.cshtml" />
+    <Content Include="Views\Shared\Tour\AllPackages.cshtml" />
+    <Content Include="Views\Shared\Tour\AdminAccount.cshtml" />
+    <Content Include="Views\Shared\Tour\GetPackage.cshtml" />
+    <Content Include="Views\Shared\Tour\PackageConfirmation.cshtml" />
+    <Content Include="Views\Shared\Tour\RelatedPackages.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Edit.cshtml" />
     <Content Include="Views\Admin\dashboard.cshtml" />
