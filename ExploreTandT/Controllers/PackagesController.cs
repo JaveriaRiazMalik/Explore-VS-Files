@@ -10,6 +10,10 @@ namespace ExploreTandT.Controllers
     public class PackagesController : Controller
     {
         ExploreEntities db = new ExploreEntities();
+        /// <summary>
+        /// Show the default list of all packages and dropdown boxes of range nad place 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
 
@@ -61,7 +65,12 @@ namespace ExploreTandT.Controllers
             return View(userL);
         }
 
-
+        /// <summary>
+        /// Show the default list of all packages and dropdown boxes of range nad place
+        /// filter package by place and range
+        /// </summary>
+        /// <param name="collection"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult Index(AdminViewModel collection)
         {
@@ -133,6 +142,13 @@ namespace ExploreTandT.Controllers
             return View(userL);
         }
         
+        /// <summary>
+        /// filter package by category
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>
+        /// Show fiter by category page
+        /// </returns>
         public ActionResult FilterCategory(string id)
         {
             ExploreEntities db = new ExploreEntities();
@@ -161,10 +177,7 @@ namespace ExploreTandT.Controllers
             }
             return View(userL) ;
         }
-        public ActionResult Testing(string id)
-        {
-            return Content(Convert.ToString(id));
-        }
+       
         // GET: Packages/Details/5
         public ActionResult Details(int id)
         {

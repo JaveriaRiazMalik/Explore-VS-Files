@@ -18,6 +18,11 @@ namespace ExploreTandT.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// Calculate the packages, tourists, tour guides and show in dashboard account 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult AdminAccount()
         {
             ViewBag.Tourists = db.AspNetUsers.Where(x => x.Type == "0").ToList();

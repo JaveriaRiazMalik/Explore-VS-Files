@@ -20,6 +20,9 @@ namespace ExploreTandT.Controllers
         ExploreEntities db = new ExploreEntities();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        /// <summary>
+        /// Admin Password and EmailID are set
+        /// </summary>
         private string var = "admin@gmail.com";
         private string pass = "admin-123";
 
@@ -150,7 +153,11 @@ namespace ExploreTandT.Controllers
         {
             return View();
         }
-
+        /// <summary>
+        /// Feilds are added according to our project requirements
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         //
         // POST: /Account/Register
         [HttpPost]
@@ -159,7 +166,7 @@ namespace ExploreTandT.Controllers
         public async Task<ActionResult> Register(RegisterViewModel model)
 
         {
-            if (model.Image != null)
+            if (model.Image != null)//Default image is stored as the userprofile 
             {
                 string filename = Path.GetFileNameWithoutExtension(model.Image.FileName);
                 string ext = Path.GetExtension(model.Image.FileName);
@@ -195,7 +202,12 @@ namespace ExploreTandT.Controllers
         }
 
 
-
+        /// <summary>
+        /// This function provide the functionality to add and change user profile picture
+        /// </summary>
+        /// <returns>
+        /// Show the selected image in user account view
+        /// </returns>
         public ActionResult ChangeImage()
         {
             return View();
@@ -213,7 +225,7 @@ namespace ExploreTandT.Controllers
             collection.Image.SaveAs(filename);
             ExploreEntities db = new ExploreEntities();
             string id = User.Identity.GetUserId();
-            var user = db.AspNetUsers.Where(x => x.Id == id).First();
+            var user = db.AspNetUsers.Where(x => x.Id == id).First();//Set the image path in database
             user.ImagePath = filetodb;
             db.SaveChanges();
             string message = "Your Picture is Updated " + user.Name;
@@ -472,7 +484,12 @@ namespace ExploreTandT.Controllers
             base.Dispose(disposing);
 
         }
-
+        /// <summary>
+        /// Login user can add their reviews
+        /// </summary>
+        /// <returns>
+        /// if user is login then add the review and return show review page otherwise return login page
+        /// </returns>
         public ActionResult Reviews()
         {
             return View();
@@ -483,45 +500,40 @@ namespace ExploreTandT.Controllers
         {
             ExploreEntities db = new ExploreEntities();
             string userid = User.Identity.GetUserId();
-            var loginuser = db.AspNetUsers.Where(y => y.Id == userid);
-            Review x = new Review();
-            var nameofloginuser = db.AspNetUsers.ToList();
-            foreach (var d in nameofloginuser)
+            if (userid != null)//check the user is login or not
             {
-                if (d.Id == userid)
+                var loginuser = db.AspNetUsers.Where(y => y.Id == userid);
+                Review x = new Review();
+                var nameofloginuser = db.AspNetUsers.ToList();
+                foreach (var d in nameofloginuser)
                 {
-                    x.Name = d.Name;
-                    x.Reviews = review.Reviews;
-                    db.Reviews.Add(x);
+                    if (d.Id == userid)
+                    {
+                        x.Name = d.Name;
+                        x.Reviews = review.Reviews;
+                        db.Reviews.Add(x);
 
-                    db.SaveChanges();
+                        db.SaveChanges();
+                    }
                 }
+                return RedirectToAction("ShowReview", "Review");
             }
-            return RedirectToAction("ShowReview", "Account");
-
-
-        }
-
-        public ActionResult ShowReview()
-        {
-
-            ExploreEntities d = new ExploreEntities();
-            var storeReviews = d.Reviews.ToList();
-            UserAccountViewModel userl = new UserAccountViewModel();
-
-            foreach (var t in storeReviews)
+            else
             {
-                ReviewsModel r = new ReviewsModel();
-                r.Name = t.Name;
-                r.Reviews = t.Reviews;
-                userl.StoreReview.Add(r);
-
+                return Redirect("~/Account/Login");
             }
-            return View(userl);
+
         }
 
 
-
+        /// <summary>
+        /// User can select the package in case he/she is logged in
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>
+        /// Show my package list in database selected packages list if logged in 
+        /// otherwise show login page
+        /// </returns>
         public ActionResult Select(int id)
         {
 
@@ -530,7 +542,7 @@ namespace ExploreTandT.Controllers
             string userid = User.Identity.GetUserId();
             var i = db.AllPackages.Where(y => y.PackageId == id).First();
             var checklist = db.SelectedPacakges.ToList();
-            bool check = false;
+            bool check = false; // check the package uniqueness
             if (userid != null)
             {
                 foreach(var e in checklist)
@@ -563,12 +575,17 @@ namespace ExploreTandT.Controllers
             }
             else
             {
-                ViewBag.Message = "You have to login  first to Select any Package";
                 return Redirect("~/Account/Login");
             }
                 
         }
-
+        /// <summary>
+        /// Remove the package from specific user package list
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>
+        /// Show the updated user account
+        /// </returns>
         public ActionResult CancelPackage(int id)
         {
             ExploreEntities db = new ExploreEntities();
@@ -586,6 +603,10 @@ namespace ExploreTandT.Controllers
             return RedirectToAction("Index", "Account");
         }
 
+        /// <summary>
+        /// show user details and selected packages list 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             
@@ -633,7 +654,10 @@ namespace ExploreTandT.Controllers
             return View(user);
         }
         
-  
+        /// <summary>
+        /// show the default user details in edit model
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Edit()
         {
             RegisterViewModel collection = new RegisterViewModel();
@@ -650,7 +674,13 @@ namespace ExploreTandT.Controllers
             return View(collection);
         }
 
-       
+       /// <summary>
+       /// Edit the user details and update database
+       /// </summary>
+       /// <param name="collection"></param>
+       /// <returns>
+       /// Show user account with updated details
+       /// </returns>
         [HttpPost]
         public ActionResult Edit(RegisterViewModel collection)
         {

@@ -25,12 +25,22 @@ namespace ExploreTandT.Controllers
             return View();
         }
 
+        /// <summary>
+        /// View the contact page 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
+
+        /// <summary>
+        /// COntact us all functionality done in this function
+        /// </summary>
+        /// <param name="collection"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<ActionResult> Contact(ContactViewModel collection)
         {

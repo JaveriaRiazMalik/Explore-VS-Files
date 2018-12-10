@@ -15,6 +15,11 @@ namespace ExploreTandT.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// Show the details of all user and packages
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Dashboard()
         {
             
@@ -24,12 +29,16 @@ namespace ExploreTandT.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Show the list of registered tourists 
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Touristlist()
         {
             AdminViewModel user = new AdminViewModel();
             foreach (AspNetUser u in db.AspNetUsers)
             {
-                if (u.Type == "0")
+                if (u.Type == "0")// set their type
                 {
                     user.listoftourists.Add(u);
                 }
@@ -37,6 +46,10 @@ namespace ExploreTandT.Controllers
             return View(user);
         }
 
+        /// <summary>
+        /// Show the list of registered tour guides
+        /// </summary>
+        /// <returns></returns>
         public ActionResult TourGuidelist()
         {
             AdminViewModel user = new AdminViewModel();
@@ -50,11 +63,24 @@ namespace ExploreTandT.Controllers
             return View(user);
         }
 
+        /// <summary>
+        /// Confirmation message to delete the tourist
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public ActionResult DeleteTourist(string id)
         {
             return View();
         }
 
+        /// <summary>
+        /// Delete the specific Tourist
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="collection"></param>
+        /// <returns>
+        /// return the updated list
+        /// </returns>
         // POST: Tourist/Delete/5
         [HttpPost]
         public ActionResult DeleteTourist(string id, FormCollection collection)
@@ -75,6 +101,10 @@ namespace ExploreTandT.Controllers
             }
         }
 
+        /// <summary>
+        /// show the list of all packages
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Packagelist()
         {
             AdminViewModel user = new AdminViewModel();
@@ -103,12 +133,16 @@ namespace ExploreTandT.Controllers
             return View(user);
         }
 
+        /// <summary>
+        /// show the add package view
+        /// </summary>
+        /// <returns></returns>
         public ActionResult AddPackages()
         {
 
             List<string> name = new List<string>();
 
-            foreach (AspNetUser u in db.AspNetUsers)
+            foreach (AspNetUser u in db.AspNetUsers)//dropdown list creation of Tour Guide
             {
                 if (u.Type == "1")
                 {
@@ -121,8 +155,12 @@ namespace ExploreTandT.Controllers
             ViewBag.name = name;
             return View();
         }
-        
 
+        /// <summary>
+        /// Add the packages in database
+        /// </summary>
+        /// <param name="collection"></param>
+        /// <returns></returns>
         [HttpPost]
         public ActionResult AddPackages(AllPackageViewModel collection)
         {
@@ -162,12 +200,23 @@ namespace ExploreTandT.Controllers
 
         }
 
+        /// <summary>
+        /// View the confirmation message 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: TourGuide/Delete/5
         public ActionResult DeleteT(string id)
         {
             return View();
         }
 
+        /// <summary>
+        /// Delete the specific Tour guide
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="collection"></param>
+        /// <returns></returns>
         // POST: TourGuide/Delete/5
         [HttpPost]
         public ActionResult DeleteT(string id, FormCollection collection)
@@ -186,12 +235,23 @@ namespace ExploreTandT.Controllers
             }
         }
 
+        /// <summary>
+        /// View the confirnmation message 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: Packages/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
+        /// <summary>
+        /// Delete the specific Package
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="collection"></param>
+        /// <returns></returns>
         // POST: Packages/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)

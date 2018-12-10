@@ -1,0 +1,54 @@
+﻿@model ExploreTandT.Models.ShowReviewModel
+
+
+@{
+    ViewBag.Title = "ShowReview";
+}
+<style>
+    .text-validate {
+        color: white;
+    }
+</style>
+<body>
+    <div id="Admin_Account">
+        <div class="container">
+            <h1 class="AdminAccount"></h1>
+            <div class="AdminAccount-form">
+
+
+                <h2 style="margin-bottom: 50px " class="text-validate">Reviews</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-Simple">
+                        <thead class="Column3">
+                            <tr>
+
+                                <th scope="col"> @Html.DisplayNameFor(model => model.StoreReview[0].Name)</th>
+                                <th scope="col">  @Html.DisplayNameFor(model => model.StoreReview[0].Reviews)</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="Column3">
+                            @foreach (var item in Model.StoreReview)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Reviews)
+                                    </td>
+
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <a href="~/Account/Reviews/" type="button" class="btn btn-primary btn-responsive">Submit Your Reviews </a>
+
+            </div>
+        </div>
+    </div>
+</body>

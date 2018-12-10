@@ -14,8 +14,8 @@ namespace ExploreTandT
     
     public partial class Review
     {
+        public int ReviewsID { get; set; }
         public string Reviews { get; set; }
         public string Name { get; set; }
-        public int ReviewID { get; set; }
     }
 }

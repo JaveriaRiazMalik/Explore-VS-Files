@@ -23,7 +23,7 @@ namespace ExploreTandT.Models
 
         [Required(ErrorMessage = "Pleasee enter Valid Expense")]
         [DataType(DataType.Currency)]
-        [Range(1, 9999, ErrorMessage = "Enter Range between 1 and 9999")]
+        [Range(1, 9999, ErrorMessage = "Enter Range between 1 and 999")]
         [RegularExpression(@"^(((\d{1})*))$", ErrorMessage = "Enter Valid Expense")]
         public int Range { get; set; }
 

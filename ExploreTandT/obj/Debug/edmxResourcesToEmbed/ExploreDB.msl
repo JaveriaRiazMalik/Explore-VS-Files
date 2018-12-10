@@ -57,7 +57,6 @@
     <EntitySetMapping Name="AspNetUsers">
       <EntityTypeMapping TypeName="ExploreModel.AspNetUser">
         <MappingFragment StoreEntitySet="AspNetUsers">
-          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="CNIC" ColumnName="CNIC" />
           <ScalarProperty Name="Address" ColumnName="Address" />
@@ -107,7 +106,7 @@
     <EntitySetMapping Name="Reviews">
       <EntityTypeMapping TypeName="ExploreModel.Review">
         <MappingFragment StoreEntitySet="Reviews">
-          <ScalarProperty Name="ReviewID" ColumnName="ReviewID" />
+          <ScalarProperty Name="ReviewsID" ColumnName="ReviewsID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Reviews" ColumnName="Reviews" />
         </MappingFragment>
